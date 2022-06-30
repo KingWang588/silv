@@ -8,6 +8,8 @@ node_modules/
 dist/
 app/release
 local.properties
+.gradle
+*/build
 
 # Compiled Java class files
 *.class
@@ -17,9 +19,6 @@ local.properties
 
 # Log files
 *.log
-
-# Package files
-*.jar
 
 # Maven
 target/
