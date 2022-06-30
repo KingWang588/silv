@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jokor\\Desktop\\pro\\pkg\\2022-06-27\\silv-v4-android-master2\\silv-v4-android-master2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw480dp-v13\\values-sw480dp-v13.xml",
+            "outputFile": "/Users/brook/Desktop/work/slive/silv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw480dp-v13/values-sw480dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jokor\\Desktop\\pro\\pkg\\2022-06-27\\silv-v4-android-master2\\silv-v4-android-master2\\multi-image-selector\\build\\intermediates\\packaged_res\\debug\\values-sw480dp-v13\\values-sw480dp-v13.xml",
+                    "source": "/Users/brook/Desktop/work/slive/silv/multi-image-selector/build/intermediates/packaged_res/debug/values-sw480dp-v13/values-sw480dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

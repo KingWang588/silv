@@ -5,6 +5,6 @@
 5    android:versionName="unspecified" >
 6
 7    <uses-sdk android:minSdkVersion="19" />
-7-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+7-->/Users/brook/Desktop/work/slive/silv/roundedimageview/src/main/AndroidManifest.xml
 8
 9</manifest>

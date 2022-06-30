@@ -1,9 +1,12 @@
 package com.yhy.hzzll.message;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -29,13 +32,20 @@ import com.netease.nimlib.sdk.uinfo.UserService;
 import com.netease.nimlib.sdk.uinfo.model.NimUserInfo;
 import com.yhy.hzzll.R;
 import com.yhy.hzzll.framework.MyData;
+import com.yhy.hzzll.home.activity.lawyeroffice.LawyerNationalActivity;
 import com.yhy.hzzll.home.activity.newcollaborate.PickUpCaseActivity;
 import com.yhy.hzzll.mian.activity.BaseActivity;
+import com.yhy.hzzll.my.activity.NewInviteActivity;
+import com.yhy.hzzll.my.activity.PersonDataLawyerActivity;
 import com.yhy.hzzll.my.activity.QuickConsultingOrderDetailsActivity;
 import com.yhy.hzzll.session.SessionHelper;
 import com.yhy.hzzll.utils.JSONTool;
 import com.yhy.hzzll.utils.LogUtils;
 import com.yhy.hzzll.utils.PrefsUtils;
+import com.yhy.hzzll.utils.ToastUtils;
+import com.yhy.hzzll.view.DialogLoading;
+import com.yhy.hzzll.view.LawyerJobPopupWindow;
+import com.yhy.hzzll.view.ReportPopupWindow;
 import com.yhy.hzzll.widget.TimeTextView;
 
 import org.json.JSONException;
@@ -60,6 +70,7 @@ public class MyNewMessageActivity extends BaseActivity {
     TextView tv_file;
     TextView tv_text_close;
     TextView tv_time;
+    TextView tv_report;
     TimeTextView tv_date;
     String account;
 
@@ -101,6 +112,7 @@ public class MyNewMessageActivity extends BaseActivity {
         tv_name = (TextView) findViewById(R.id.tv_name);
         ic_back = (ImageView) findViewById(R.id.ic_back);
         tv_file = (TextView) findViewById(R.id.tv_file);
+        tv_report = (TextView) findViewById(R.id.tv_report);
         tv_text_close = (TextView) findViewById(R.id.tv_text_close);
         tv_date = (TimeTextView) findViewById(R.id.tv_date);
         tv_time = findViewById(R.id.tv_time);
@@ -165,7 +177,28 @@ public class MyNewMessageActivity extends BaseActivity {
 
             }
         });
-
+        tv_report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ReportPopupWindow lawyerJobPopupWindow = new ReportPopupWindow(MyNewMessageActivity.this);
+                lawyerJobPopupWindow.showAtLocation(view, Gravity.BOTTOM, 0, 0);
+                lawyerJobPopupWindow.setAddresskListener(new ReportPopupWindow.OnAddressCListener() {
+                    @Override
+                    public void onClick(String job) {
+                        final DialogLoading loading = new DialogLoading();
+                        loading.showDialog(MyNewMessageActivity.this);
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                loading.dismissDialog();
+                                ToastUtils.getUtils(MyNewMessageActivity.this).show("举报成功，等待工作人员审核！");
+                                finish();
+                            }
+                        },2000);
+                    }
+                });
+            }
+        });
         rl_order_detial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

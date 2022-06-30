@@ -6,18 +6,18 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml
+8-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml
 9        android:targetSdkVersion="27" />
-9-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml
+9-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml
 10
 11    <application>
-11-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:5:5-155:19
+11-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:5:5-155:19
 12        <meta-data
-12-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:7:9-9:42
+12-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:7:9-9:42
 13            android:name="com.netease.nim.uikit.support.glide.NIMGlideModule"
-13-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:8:13-78
+13-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:8:13-78
 14            android:value="GlideModule" />
-14-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:9:13-40
+14-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:9:13-40
 15
 16        <!-- 会话窗口 -->
 17        <!--
@@ -25,270 +25,270 @@
 19             如果开发者不需要该功能或效果，使用普通主题即可。 同时，还需要将message_activity.xml这个layout中的根节点的paddingTop去掉。
 20        -->
 21        <activity
-21-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:14:9-19:70
+21-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:14:9-19:70
 22            android:name="com.netease.nim.uikit.business.session.activity.P2PMessageActivity"
-22-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:15:13-94
+22-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:15:13-94
 23            android:configChanges="keyboardHidden|orientation"
-23-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:16:13-63
+23-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:16:13-63
 24            android:screenOrientation="portrait"
-24-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:17:13-49
+24-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:17:13-49
 25            android:theme="@style/Theme.AppCompat.NoActionBar"
-25-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:18:13-63
+25-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:18:13-63
 26            android:windowSoftInputMode="stateHidden|adjustResize" />
-26-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:19:13-67
+26-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:19:13-67
 27        <activity
-27-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:20:9-25:70
+27-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:20:9-25:70
 28            android:name="com.netease.nim.uikit.business.session.activity.TeamMessageActivity"
-28-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:21:13-95
+28-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:21:13-95
 29            android:configChanges="keyboardHidden|orientation"
-29-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:22:13-63
+29-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:22:13-63
 30            android:screenOrientation="portrait"
-30-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:23:13-49
+30-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:23:13-49
 31            android:theme="@style/Theme.AppCompat.NoActionBar"
-31-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:24:13-63
+31-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:24:13-63
 32            android:windowSoftInputMode="stateHidden|adjustResize" />
-32-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:25:13-67
+32-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:25:13-67
 33
 34        <!-- 群聊 -->
 35        <activity
-35-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:28:9-33:70
+35-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:28:9-33:70
 36            android:name="com.netease.nim.uikit.business.team.activity.NormalTeamInfoActivity"
-36-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:29:13-95
+36-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:29:13-95
 37            android:configChanges="keyboardHidden|orientation"
-37-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:30:13-63
+37-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:30:13-63
 38            android:screenOrientation="portrait"
-38-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:31:13-49
+38-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:31:13-49
 39            android:theme="@style/Theme.AppCompat.NoActionBar"
-39-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:32:13-63
+39-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:32:13-63
 40            android:windowSoftInputMode="stateHidden|adjustResize" />
-40-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:33:13-67
+40-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:33:13-67
 41        <activity
-41-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:34:9-39:70
+41-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:34:9-39:70
 42            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamInfoActivity"
-42-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:35:13-97
+42-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:35:13-97
 43            android:configChanges="keyboardHidden|orientation"
-43-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:36:13-63
+43-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:36:13-63
 44            android:screenOrientation="portrait"
-44-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:37:13-49
+44-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:37:13-49
 45            android:theme="@style/Theme.AppCompat.NoActionBar"
-45-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:38:13-63
+45-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:38:13-63
 46            android:windowSoftInputMode="stateHidden|adjustResize" />
-46-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:39:13-67
+46-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:39:13-67
 47        <activity
-47-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:40:9-45:70
+47-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:40:9-45:70
 48            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberActivity"
-48-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:41:13-99
+48-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:41:13-99
 49            android:configChanges="keyboardHidden|orientation"
-49-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:42:13-63
+49-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:42:13-63
 50            android:screenOrientation="portrait"
-50-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:43:13-49
+50-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:43:13-49
 51            android:theme="@style/Theme.AppCompat.NoActionBar"
-51-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:44:13-63
+51-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:44:13-63
 52            android:windowSoftInputMode="stateHidden|adjustResize" />
-52-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:45:13-67
+52-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:45:13-67
 53        <activity
-53-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:46:9-51:70
+53-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:46:9-51:70
 54            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamAnnounceActivity"
-54-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:47:13-101
+54-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:47:13-101
 55            android:configChanges="keyboardHidden|orientation"
-55-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:48:13-63
+55-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:48:13-63
 56            android:screenOrientation="portrait"
-56-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:49:13-49
+56-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:49:13-49
 57            android:theme="@style/Theme.AppCompat.NoActionBar"
-57-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:50:13-63
+57-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:50:13-63
 58            android:windowSoftInputMode="stateHidden|adjustResize" />
-58-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:51:13-67
+58-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:51:13-67
 59        <activity
-59-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:52:9-57:70
+59-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:52:9-57:70
 60            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamMemberInfoActivity"
-60-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:53:13-103
+60-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:53:13-103
 61            android:configChanges="keyboardHidden|orientation"
-61-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:54:13-63
+61-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:54:13-63
 62            android:screenOrientation="portrait"
-62-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:55:13-49
+62-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:55:13-49
 63            android:theme="@style/Theme.AppCompat.NoActionBar"
-63-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:56:13-63
+63-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:56:13-63
 64            android:windowSoftInputMode="stateHidden|adjustResize" />
-64-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:57:13-67
+64-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:57:13-67
 65        <activity
-65-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:58:9-63:70
+65-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:58:9-63:70
 66            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamNicknameActivity"
-66-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:59:13-101
+66-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:59:13-101
 67            android:configChanges="keyboardHidden|orientation"
-67-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:60:13-63
+67-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:60:13-63
 68            android:screenOrientation="portrait"
-68-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:61:13-49
+68-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:61:13-49
 69            android:theme="@style/Theme.AppCompat.NoActionBar"
-69-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:62:13-63
+69-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:62:13-63
 70            android:windowSoftInputMode="stateHidden|adjustResize" />
-70-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:63:13-67
+70-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:63:13-67
 71        <activity
-71-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:64:9-69:70
+71-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:64:9-69:70
 72            android:name="com.netease.nim.uikit.business.team.activity.AdvancedTeamCreateAnnounceActivity"
-72-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:65:13-107
+72-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:65:13-107
 73            android:configChanges="keyboardHidden|orientation"
-73-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:66:13-63
+73-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:66:13-63
 74            android:screenOrientation="portrait"
-74-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:67:13-49
+74-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:67:13-49
 75            android:theme="@style/Theme.AppCompat.NoActionBar"
-75-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:68:13-63
+75-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:68:13-63
 76            android:windowSoftInputMode="stateHidden|adjustResize" />
-76-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:69:13-67
+76-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:69:13-67
 77        <activity
-77-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:70:9-75:70
+77-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:70:9-75:70
 78            android:name="com.netease.nim.uikit.business.team.activity.TeamPropertySettingActivity"
-78-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:71:13-100
+78-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:71:13-100
 79            android:configChanges="keyboardHidden|orientation"
-79-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:72:13-63
+79-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:72:13-63
 80            android:screenOrientation="portrait"
-80-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:73:13-49
+80-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:73:13-49
 81            android:theme="@style/Theme.AppCompat.NoActionBar"
-81-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:74:13-63
+81-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:74:13-63
 82            android:windowSoftInputMode="stateHidden|adjustResize" />
-82-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:75:13-67
+82-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:75:13-67
 83
 84        <!-- 联系人选择器 -->
 85        <activity
-85-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:78:9-84:67
+85-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:78:9-84:67
 86            android:name="com.netease.nim.uikit.business.contact.selector.activity.ContactSelectActivity"
-86-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:79:13-106
+86-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:79:13-106
 87            android:configChanges="keyboardHidden|orientation"
-87-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:80:13-63
+87-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:80:13-63
 88            android:label="@string/contact_selector"
-88-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:81:13-53
+88-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:81:13-53
 89            android:screenOrientation="portrait"
-89-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:82:13-49
+89-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:82:13-49
 90            android:theme="@style/Theme.AppCompat.NoActionBar"
-90-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:83:13-63
+90-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:83:13-63
 91            android:windowSoftInputMode="stateHidden|adjustPan" />
-91-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:84:13-64
+91-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:84:13-64
 92
 93        <!-- @ 选择器 -->
 94        <activity
-94-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:87:9-89:71
+94-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:87:9-89:71
 95            android:name="com.netease.nim.uikit.business.ait.selector.AitContactSelectorActivity"
-95-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:87:19-83
+95-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:87:19-83
 96            android:screenOrientation="portrait"
-96-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:88:19-55
+96-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:88:19-55
 97            android:theme="@style/Theme.AppCompat.NoActionBar" />
-97-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:89:19-69
+97-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:89:19-69
 98
 99        <!-- 照片选择 -->
 100        <activity
-100-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:92:9-95:54
+100-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:92:9-95:54
 101            android:name="com.netease.nim.uikit.common.media.picker.activity.PickImageActivity"
-101-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:93:13-96
+101-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:93:13-96
 102            android:screenOrientation="portrait"
-102-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:94:13-49
+102-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:94:13-49
 103            android:theme="@style/Theme.AppCompat" />
-103-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:95:13-51
+103-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:95:13-51
 104        <activity
-104-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:96:9-99:65
+104-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:96:9-99:65
 105            android:name="com.netease.nim.uikit.common.media.picker.activity.CropImageActivity"
-105-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:97:13-96
+105-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:97:13-96
 106            android:screenOrientation="portrait"
-106-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:98:13-49
+106-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:98:13-49
 107            android:theme="@style/Theme.AppCompat.NoActionBar" />
-107-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:99:13-63
+107-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:99:13-63
 108        <activity
-108-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:100:9-103:66
+108-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:100:9-103:66
 109            android:name="com.netease.nim.uikit.common.media.picker.activity.PickerAlbumActivity"
-109-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:101:13-98
+109-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:101:13-98
 110            android:screenOrientation="portrait"
-110-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:102:13-49
+110-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:102:13-49
 111            android:theme="@style/Theme.AppCompat.NoActionBar" />
-111-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:103:13-63
+111-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:103:13-63
 112        <activity
-112-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:104:9-107:54
+112-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:104:9-107:54
 113            android:name="com.netease.nim.uikit.common.media.picker.activity.PickerAlbumPreviewActivity"
-113-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:105:13-105
+113-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:105:13-105
 114            android:screenOrientation="portrait"
-114-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:106:13-49
+114-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:106:13-49
 115            android:theme="@style/Theme.AppCompat" />
-115-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:107:13-51
+115-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:107:13-51
 116        <activity
-116-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:108:9-113:53
+116-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:108:9-113:53
 117            android:name="com.netease.nim.uikit.common.media.picker.activity.PreviewImageFromLocalActivity"
-117-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:109:13-108
+117-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:109:13-108
 118            android:configChanges="keyboardHidden|orientation"
-118-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:110:13-63
+118-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:110:13-63
 119            android:screenOrientation="portrait"
-119-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:111:13-49
+119-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:111:13-49
 120            android:theme="@style/Theme.AppCompat"
-120-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:113:13-51
+120-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:113:13-51
 121            android:windowSoftInputMode="stateHidden|adjustResize" />
-121-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:112:13-67
+121-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:112:13-67
 122        <activity
-122-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:114:9-119:66
+122-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:114:9-119:66
 123            android:name="com.netease.nim.uikit.common.media.picker.activity.PreviewImageFromCameraActivity"
-123-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:115:13-109
+123-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:115:13-109
 124            android:configChanges="keyboardHidden|orientation"
-124-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:116:13-63
+124-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:116:13-63
 125            android:label="@string/input_panel_take"
-125-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:117:13-53
+125-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:117:13-53
 126            android:screenOrientation="portrait"
-126-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:118:13-49
+126-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:118:13-49
 127            android:theme="@style/Theme.AppCompat.NoActionBar" />
-127-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:119:13-63
+127-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:119:13-63
 128
 129        <!-- 视频 -->
 130        <activity
-130-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:122:9-127:65
+130-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:122:9-127:65
 131            android:name="com.netease.nim.uikit.business.session.activity.CaptureVideoActivity"
-131-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:123:13-96
+131-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:123:13-96
 132            android:configChanges="keyboardHidden|orientation"
-132-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:124:13-63
+132-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:124:13-63
 133            android:screenOrientation="portrait"
-133-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:125:13-49
+133-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:125:13-49
 134            android:theme="@style/Theme.AppCompat.NoActionBar"
-134-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:127:13-63
+134-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:127:13-63
 135            android:windowSoftInputMode="stateHidden|adjustResize" />
-135-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:126:13-67
+135-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:126:13-67
 136        <activity
-136-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:129:9-133:48
+136-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:129:9-133:48
 137            android:name="com.netease.nim.uikit.business.session.activity.WatchVideoActivity"
-137-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:130:13-94
+137-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:130:13-94
 138            android:configChanges="keyboardHidden|orientation|screenSize"
-138-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:131:13-74
+138-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:131:13-74
 139            android:label="@string/video_play"
-139-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:132:13-47
+139-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:132:13-47
 140            android:theme="@style/DarkTheme" />
-140-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:133:13-45
+140-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:133:13-45
 141
 142        <!-- 查看大图 -->
 143        <activity
-143-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:136:9-139:47
+143-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:136:9-139:47
 144            android:name="com.netease.nim.uikit.business.session.activity.WatchMessagePictureActivity"
-144-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:137:13-103
+144-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:137:13-103
 145            android:configChanges="keyboardHidden"
-145-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:138:13-51
+145-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:138:13-51
 146            android:theme="@style/DarkTheme" />
-146-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:139:13-45
+146-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:139:13-45
 147        <activity
-147-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:141:9-143:47
+147-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:141:9-143:47
 148            android:name="com.netease.nim.uikit.business.session.activity.WatchPicAndVideoMenuActivity"
-148-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:141:19-89
+148-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:141:19-89
 149            android:configChanges="keyboardHidden"
-149-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:142:13-51
+149-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:142:13-51
 150            android:theme="@style/DarkTheme" />
-150-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:143:13-45
+150-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:143:13-45
 151
 152        <provider
-152-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:146:9-154:20
+152-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:146:9-154:20
 153            android:name="com.netease.nim.uikit.common.media.picker.model.GenericFileProvider"
-153-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:147:13-95
+153-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:147:13-95
 154            android:authorities="${applicationId}.generic.file.provider"
-154-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:148:13-73
+154-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:148:13-73
 155            android:exported="false"
-155-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:149:13-37
+155-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:149:13-37
 156            android:grantUriPermissions="true" >
-156-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:150:13-47
+156-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:150:13-47
 157            <meta-data
-157-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:151:13-153:57
+157-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:151:13-153:57
 158                android:name="android.support.FILE_PROVIDER_PATHS"
-158-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:152:17-67
+158-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:152:17-67
 159                android:resource="@xml/provider_paths" />
-159-->C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\uikit_new\AndroidManifest.xml:153:17-55
+159-->/Users/brook/Desktop/work/slive/silv/uikit_new/AndroidManifest.xml:153:17-55
 160        </provider>
 161    </application>
 162

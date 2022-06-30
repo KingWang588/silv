@@ -23,11 +23,11 @@
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="80dp"
             android:text="私律用户"
             android:textColor="@color/white"
             android:textSize="@dimen/titlebar_text" />
-
 
         <TextView
             android:id="@+id/tv_file"
@@ -39,6 +39,22 @@
             android:text="咨询文件"
             android:textColor="@color/white"
             android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/tv_file"
+            android:background="@color/white"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="2dp"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingBottom="2dp"
+            android:text="举报"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
 
     </RelativeLayout>
 

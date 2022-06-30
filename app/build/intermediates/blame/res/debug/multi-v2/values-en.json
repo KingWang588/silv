@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jokor\\Desktop\\pro\\pkg\\2022-06-27\\silv-v4-android-master2\\silv-v4-android-master2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+            "outputFile": "/Users/brook/Desktop/work/slive/silv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jokor\\Desktop\\pro\\pkg\\2022-06-27\\silv-v4-android-master2\\silv-v4-android-master2\\uikit_new\\build\\intermediates\\packaged_res\\debug\\values-en\\values-en.xml",
+                    "source": "/Users/brook/Desktop/work/slive/silv/uikit_new/build/intermediates/packaged_res/debug/values-en/values-en.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

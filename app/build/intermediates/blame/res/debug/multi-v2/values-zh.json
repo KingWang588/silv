@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jokor\\Desktop\\pro\\pkg\\2022-06-27\\silv-v4-android-master2\\silv-v4-android-master2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "/Users/brook/Desktop/work/slive/silv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\jokor\\Desktop\\pro\\pkg\\2022-06-27\\silv-v4-android-master2\\silv-v4-android-master2\\library\\build\\intermediates\\packaged_res\\debug\\values-zh\\values-zh.xml",
+                    "source": "/Users/brook/Desktop/work/slive/silv/library/build/intermediates/packaged_res/debug/values-zh/values-zh.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -21,7 +21,17 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\jokor\\.gradle\\caches\\transforms-2\\files-2.1\\141cda4786bd93a03bc053dfdcf6acba\\jetified-permission-1.0.7\\res\\values-zh\\values-zh.xml",
+                    "source": "/Users/brook/Desktop/work/slive/silv/multi-image-selector/build/intermediates/packaged_res/debug/values-zh/values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,102,161,217,265,325,378,438,493,554,638,683",
+                        "endColumns": "46,58,55,47,59,52,59,54,60,83,44,51",
+                        "endOffsets": "97,156,212,260,320,373,433,488,549,633,678,730"
+                    }
+                },
+                {
+                    "source": "/Users/brook/.gradle/caches/transforms-2/files-2.1/b29d5b90b8816edcaccba989d2c3765a/jetified-permission-1.0.7/res/values-zh/values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -35,16 +45,6 @@
                         "startOffsets": "735,784,899,999,1048,1099,1169",
                         "endColumns": "48,114,99,48,50,69,72",
                         "endOffsets": "779,894,994,1043,1094,1164,1237"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\jokor\\Desktop\\pro\\pkg\\2022-06-27\\silv-v4-android-master2\\silv-v4-android-master2\\multi-image-selector\\build\\intermediates\\packaged_res\\debug\\values-zh\\values-zh.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,102,161,217,265,325,378,438,493,554,638,683",
-                        "endColumns": "46,58,55,47,59,52,59,54,60,83,44,51",
-                        "endOffsets": "97,156,212,260,320,373,433,488,549,633,678,730"
                     }
                 }
             ]

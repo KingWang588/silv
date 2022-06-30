@@ -3048,6 +3048,7 @@ id tv_register
 id tv_reload
 id tv_remember
 id tv_remind
+id tv_report
 id tv_res_status
 id tv_reset
 id tv_restart
@@ -3658,6 +3659,7 @@ layout popupwindow_cooperate_price
 layout popupwindow_keyboard
 layout popupwindow_lawyerjob
 layout popupwindow_pickphoto
+layout popupwindow_report
 layout popupwindow_screening
 layout popupwindow_service
 layout popupwindow_time
