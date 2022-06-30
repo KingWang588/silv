@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent1">#3f000000</color>
+    <!-- 半透明的style -->
+    <color name="transparent">#01000000</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#969696</color>
+    <color name="red">#ff2020</color>
+    <color name="app_bg">#f8f8f8</color>
+    <color name="textbule">#1ba6ff</color>
+    <color name="interacation_grayline">#B1B1B1</color>
+    <color name="register_green"> #44C91A</color>
+    <color name="textgrey"> #333334</color>
+    <color name="color_blue_3a9efb">#3a9efb</color>
+    <color name="discoupon_txt">#E1E1E1</color>
+    <color name="black">#000000</color>
+    <!-- 黑色 -->
+    <color name="cmbkb_black">#ff000000</color>
+
+    <!-- 主色调。黄色 -->
+    <color name="mainyellow"> #FFC74F</color>
+
+    <!-- 快速发布 字体灰色 -->
+
+    <!-- 主色调字体 灰色 -->
+    <color name="cgrey"> #616161</color>
+    <color name="ccgrey">#E4E4E4</color>
+
+    <!-- 主色调字体 金色 -->
+    <!-- 主色调字体 淡蓝色 -->
+    <color name="cbule">#67c8d8</color>
+    <!-- 主色调北京 深蓝色 -->
+    <color name="darkbule">#4682B4</color>
+    <color name="msg_darkbule">#44B6FF</color>
+    <!-- 灰色分割线 -->
+    <color name="gray_line">#E6E6E6</color>
+
+    <color name="orangeyellow">#EE9A49</color>
+
+    <color name="lightGrey">#d3d3d3</color>
+
+</resources>

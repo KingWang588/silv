@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的关注"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/textbule"
+        android:orientation="horizontal" >
+
+        <TextView
+
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+            android:layout_marginLeft="1px"
+            android:layout_marginTop="1px"
+            android:layout_weight="1"
+            android:background="@drawable/frame_bule_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="咨询问题"
+            android:textColor="@color/register_color_selector"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1px"
+             android:layout_marginRight="1px"
+            android:layout_marginLeft="1px"
+            android:layout_marginTop="1px"
+            android:layout_weight="1"
+            android:background="@drawable/frame_bule_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="会员"
+            android:textColor="@color/register_color_selector"
+            android:textSize="14sp" />
+
+ <TextView
+            android:id="@+id/tv_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/frame_bule_selector"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="服务"
+            android:visibility="gone"
+            android:textColor="@color/register_color_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <!--      <com.yhy.hzzll.widget.CustomViewPager
+            android:id="@+id/pg_focus2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.yhy.hzzll.widget.CustomViewPager>-->
+ <FrameLayout  
+        android:id="@+id/id_content"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  />                          
+    </LinearLayout>
+
+</LinearLayout>

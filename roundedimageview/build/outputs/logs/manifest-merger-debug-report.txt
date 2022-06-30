@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:2:3-43
+		INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+		INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:1-3:12
+		INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+		ADDED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\jokor\Desktop\pro\pkg\2022-06-27\silv-v4-android-master2\silv-v4-android-master2\roundedimageview\src\main\AndroidManifest.xml

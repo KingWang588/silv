@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yhy.hzzll.home.fragment.AllConsultingFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_consult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@color/app_bg">
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_no_data"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="没有最新咨询" />
+
+        <ImageView
+            android:id="@+id/iv_btn_to_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lv_consult"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/btntotop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

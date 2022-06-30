@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my.activity.InvitationImageActivity">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/textbule"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_invitation_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:padding="10dp"
+                android:src="@drawable/download_1"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backroud_radius_cyellow"
+                android:padding="10dp"
+                android:text="下载专属推荐图片"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cgrey" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/tv_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="取消"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

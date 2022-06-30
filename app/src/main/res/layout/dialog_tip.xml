@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud_input_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="收益信息"
+            android:textColor="@color/textgrey"
+            android:textSize="16sp" />
+
+        <View style="@style/grayline" />
+
+        <TextView
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:text="     收益信息里的信息随着你的回复被采纳、追问、打赏、旁听等用户的操作而变化。其中当追问红包是当用户第1个追问你并你是第1个回复用户追问的律师，系统会奖励您追问红包。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/backroud_bule"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="债权转让"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View style="@style/whiteline" />
+
+        <TextView
+            android:id="@+id/tv_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="债权融资"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View style="@style/whiteline" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="债权易物"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View style="@style/whiteline" />
+
+        <TextView
+            android:id="@+id/tv_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="债权危机"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <View style="@style/whiteline" />
+
+        <TextView
+            android:id="@+id/tv_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="资产线索悬赏"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

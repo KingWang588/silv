@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yhy.hzzll.home.fragment.NewHomeFragment">
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/ptrflv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <include
+            android:id="@+id/layout_tab_2"
+            layout="@layout/home_second_part_tab_top"
+            android:visibility="gone"/>
+
+        </RelativeLayout>
+</RelativeLayout>

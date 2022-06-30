@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yhy.hzzll.my.activity.EditAddressActivity" >
+
+   <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详细地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="修改"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    
+    
+   
+   <EditText
+       android:layout_marginLeft="20dp"
+       android:maxLength="120"
+       android:background="@null"
+       android:id="@+id/et_address"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"/>
+
+    <View
+        android:background="@color/textbule"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+   
+      <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/backroud_bule"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+   
+   
+   
+</LinearLayout>

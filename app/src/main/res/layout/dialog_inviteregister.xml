@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/backroud_white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="邀请TA注册会员"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <View style="@style/grayline" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="      确认邀请后，私律帮你发送一条邀请注册信息到TA的手机。"
+            android:textColor="@color/cgrey" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/qr_code" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫一扫直接注册"
+            android:textColor="@color/textgrey"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/backroud_cgrey"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="以后再说"
+                android:textColor="@color/textgrey" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/backroud_bule"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="邀请TA注册"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

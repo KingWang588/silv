@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yhy.hzzll.home.fragment.LatestConsultationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.yhy.hzzll.view.ListViewForScrollview
+        android:background="@color/white"
+        android:id="@+id/lv_latest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</FrameLayout>

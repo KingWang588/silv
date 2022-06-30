@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/title_bule_layout" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预览"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="200万元债权转让"
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp" >
+
+                        <TextView
+                            android:id="@+id/tv_regdate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="2015/11/33"
+                            android:textColor="@color/grey"
+                            android:textSize="13sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_orderno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="协作订单：XZXXXXXXXXXX"
+                        android:textColor="@color/cgrey"
+                        android:textSize="13sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="酬金数额："
+                                android:textColor="@color/cgrey"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/tv_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2033333元"
+                                android:textColor="@color/red"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="协作类型："
+                            android:textColor="@color/cgrey"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="全案委托-交通事故"
+                            android:textColor="@color/cgrey"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="协作地区："
+                            android:textColor="@color/cgrey"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text="湖北荆州"
+                            android:textColor="@color/cgrey"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="希望完成日期："
+                            android:textColor="@color/cgrey"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_compledate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2015-12-11"
+                            android:textColor="@color/cgrey"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/app_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_publisher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布方：叔叔"
+                        android:textColor="@color/cgrey"
+                        android:textSize="14sp" />
+
+                    <View
+                        style="@style/greyvline"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp" />
+
+                    <TextView
+                        android:id="@+id/tv_publish_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话：13233442222"
+                        android:textColor="@color/cgrey"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/app_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="详细描述"
+                    android:textColor="@color/textgrey"
+                    android:textSize="14sp" />
+
+                <View style="@style/grayline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:padding="10dp"
+                        android:textColor="@color/cgrey" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/app_bg" />
+
+                <LinearLayout
+                    android:id="@+id/ll_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:text="附件"
+                        android:textColor="@color/textgrey"
+                        android:textSize="14sp" />
+
+                    <View style="@style/grayline" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_album"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="5dp" >
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_publish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:background="@drawable/backroud_bule"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="确认并发布"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

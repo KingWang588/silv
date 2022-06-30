@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yhy.hzzll.home.activity.consult.CommentsAndLikesActivity">
+
+
+        <RelativeLayout
+            style="@style/title_layout"
+            android:background="@color/textbule">
+
+                <ImageView
+                    android:id="@+id/ic_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_back" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="点赞和评论"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titlebar_text" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_num_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:text="0人点赞" />
+
+                <TextView
+                    android:id="@+id/tv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/like"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:text="点赞"
+                    android:textColor="@color/cgrey"
+                    android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:background="@color/ccgrey"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+        <HorizontalScrollView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/linear_head_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+                </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:background="@color/ccgrey"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_num_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:text="0人评论" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="@color/ccgrey"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear_comment"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

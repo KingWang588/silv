@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:src="@drawable/register_nomal"
+        android:layout_width="75dp"
+        android:layout_height="100dp" />
+
+
+    <LinearLayout
+        android:padding="@dimen/dp_10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_name"
+            android:padding="5dp"
+            android:text="用户昵称："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_phone"
+            android:padding="5dp"
+            android:text="用户手机："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_time"
+            android:padding="5dp"
+            android:text="注册时间："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ccgrey" />
+
+
+</LinearLayout>

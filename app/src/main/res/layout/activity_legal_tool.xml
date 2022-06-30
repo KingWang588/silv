@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yhy.hzzll.home.activity.LegalToolActivity">
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="法律工具"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/textbule" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="法律工具" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="更多实用工具敬请期待..."
+                    android:textColor="@color/orangeyellow"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ccgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_lawcheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_lcc"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="律查查"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:background="@color/ccgrey" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_marginRight="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_law_and_regulation_database"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_flfuk"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="法律法规库"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:background="@color/ccgrey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0.5px"
+                    android:layout_marginTop="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_litigation_cost_calculator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_ssfjsq"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="诉讼费计算器"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ccgrey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_marginRight="0.5px"
+                    android:layout_marginTop="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_the_arbitration_fee_calculator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_zcfjsq"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="仲裁费计算器"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:background="@color/ccgrey" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_marginRight="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_preservation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_zjbq"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="证据保全"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:background="@color/ccgrey" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_marginRight="0.5px"
+                    android:layout_marginTop="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ccgrey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/textbule" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="专业服务" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:text="更多实用工具敬请期待..."
+                    android:textColor="@color/orangeyellow"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ccgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_marginRight="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_guarantee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_bqdb"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="保全担保"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:background="@color/ccgrey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_zcfw"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="仲裁服务"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:background="@color/ccgrey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0.5px"
+                    android:layout_marginTop="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_profeservice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="专业服务"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ccgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_marginRight="0.5px"
+                    android:layout_marginTop="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_circulation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_zqlz"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="债权信息"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:background="@color/ccgrey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_marginRight="0.5px"
+                    android:layout_marginTop="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/icon_home_zcxsxs"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="资产线索悬赏"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="100dp"
+                    android:background="@color/ccgrey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0.5px"
+                    android:layout_marginTop="0.5px"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ccgrey" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

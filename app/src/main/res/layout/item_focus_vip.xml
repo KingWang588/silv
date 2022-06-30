@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_char"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#E5F3F6"
+        android:padding="3dp"
+        android:text="A"
+        android:textColor="@color/textgrey"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/office_focus_img" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="王某某"
+                    android:textColor="@color/textgrey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/iv_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="律师"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fadingEdge="none"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_null_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_delete"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ff0000"
+                        android:gravity="center"
+                        android:text="删除"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

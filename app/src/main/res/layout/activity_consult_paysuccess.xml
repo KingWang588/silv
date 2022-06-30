@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/title_bule_layout" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="支付完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/register_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="支付成功"
+        android:textColor="@color/textgrey"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="律师即将开始为您服务，请保持电话畅通。"
+        android:textColor="@color/cgrey"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="您可以在“我的”--“我的接办案”中查看您的委托的代理。"
+        android:textColor="@color/cgrey"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_check_order"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backroud_radius_bule"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="查看我的订单"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_check_service"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backroud_radius_bule"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="查看委托代理详情"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

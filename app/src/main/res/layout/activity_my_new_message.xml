@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yhy.hzzll.message.MyNewMessageActivity">
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="私律用户"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+
+        <TextView
+            android:id="@+id/tv_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="咨询文件"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_order_detial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单详情"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginRight="20dp"
+            android:text="查看"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_arrow_right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ccgrey" />
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textbule"
+            android:id="@+id/tv_time"
+            android:visibility="gone"
+            android:textSize="13sp"
+            android:text="等待您的回复：时间"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.yhy.hzzll.widget.TimeTextView
+            android:visibility="gone"
+            android:background="@color/white"
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text=""
+            android:textColor="@color/textbule"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:background="@color/app_bg"
+        android:text="订单已关闭！"
+        android:padding="10dp"
+        android:id="@+id/tv_text_close"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/fl_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</LinearLayout>

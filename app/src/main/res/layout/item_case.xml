@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="宁波市中级人民法院判决书"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2015/02/12"
+            android:textColor="@color/grey"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View style="@style/grayline"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        
+        <TextView 
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已结案"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textbule"
+            android:textSize="13sp"/>
+        
+        <TextView 
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看进度"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:textSize="13sp"
+            android:background="@drawable/frame_bule"
+            android:textColor="@color/textbule"/>
+        
+    </RelativeLayout>
+    
+    <View 
+        style="@style/grayline"/>
+    
+    <View 
+        android:background="@color/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>

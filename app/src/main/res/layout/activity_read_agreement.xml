@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/title_bule_layout" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请阅读"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_useagree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:padding="12dp"
+        android:text="私律使用协议"
+        android:textColor="@color/textgrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:padding="12dp"
+        android:text="隐私声明"
+        android:textColor="@color/textgrey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_law"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:padding="12dp"
+        android:text="法律声明"
+        android:textColor="@color/textgrey"
+        android:textSize="14sp" />
+
+</LinearLayout>

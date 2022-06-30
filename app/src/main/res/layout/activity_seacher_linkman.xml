@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yhy.hzzll.message.SeacherLinkmanActivity">
+
+
+    <LinearLayout
+        android:background="@color/textbule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textbule"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:padding="15dp"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/et_seacher"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="9"
+                android:background="@drawable/frame_gray"
+                android:hint="请输入关键词"
+                android:padding="5dp"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+
+            <ImageView
+
+                android:id="@+id/iv_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="8dp"
+                android:background="@drawable/frame_gray"
+                android:src="@drawable/icon_serach" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <!--<EditText-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/et_seacher"-->
+        <!--android:padding="5dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:drawablePadding="5dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@drawable/background_seacher"-->
+        <!--android:text="搜索联系人"-->
+        <!--android:drawableLeft="@drawable/search2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp" />-->
+
+
+
+    <ListView
+        android:id="@+id/lv_seacher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>

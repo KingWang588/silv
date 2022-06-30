@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:textSize="18sp"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:drawableTop="@drawable/e_lawyer_error"
+        android:text="您的审核未通过，原因如下"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/tv_1"
+        android:id="@+id/tv_reason"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/backroud_bule"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="重新申请"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

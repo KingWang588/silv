@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud_input_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="认证失败"
+            android:textColor="@color/textgrey"
+            android:textSize="16sp" />
+
+        <View
+            android:visibility="gone" style="@style/grayline" />
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:text="该账号是用户账号，请登陆用户端。如果您想转为律师账号，请点击“转为律师”提交审核。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:background="@color/ccgrey"
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="取消"
+                    android:textColor="@color/textgrey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:background="@color/textbule"
+                    android:id="@+id/tv_ok"
+                    android:layout_width="80dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="转为律师"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

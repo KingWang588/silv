@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/tv_appleyed_l_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="申请律师(3人)"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/cgrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <com.yhy.hzzll.view.ListViewForScrollview
+        android:layout_width="match_parent"
+        android:id="@+id/lv_applyed_lawyer"
+        android:layout_height="match_parent">
+
+
+    </com.yhy.hzzll.view.ListViewForScrollview>
+
+
+
+
+</LinearLayout>

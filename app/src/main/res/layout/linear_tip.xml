@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_round"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/canclexxx" />
+    </LinearLayout>
+
+    <TextView
+        android:padding="5dp"
+        android:text="尊敬的律师您好！"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="5dp"
+        android:text="          当用户查看/收听完律师的解答后，TA可以对律师的解答进行评价、点赞、打赏，如果还有进一步问题想与律师沟通可以使用我们的追问功能。可以在回复TA问题的律师里点击追问和律师进行更深入的咨询。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/consult_reply"
+        android:text="回复数：该咨询律师回复的数量。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/dashang"
+        android:text="打赏量：该条回复被打赏的数量。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/consult_view"
+        android:text="访问量：该条咨询被访问的数量。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="10dp"
+        android:text="追问 ：显示该条回复被提问用户追问的次数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="10dp"
+        android:text="追问总量 ：显示该条咨询中用户一共追问回复律师的次数。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="10dp"
+        android:text="补充回复 ：律师补充回复该条咨询中用户追问的次数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>

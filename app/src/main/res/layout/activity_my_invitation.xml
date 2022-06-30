@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yhy.hzzll.my.activity.MyInvitationActivity">
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的邀请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:background="@color/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:src="@drawable/invition_banner" />
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_round"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="2dp"
+                        android:background="@color/textbule" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="邀请码" />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="2dp"
+                        android:background="@color/textbule" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_invite_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="FFFFFFFFFFFFFFFF"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_copy_invitation_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/consult_exceptional_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="复制邀请码"
+                        android:textColor="#b6110f"
+                        android:textSize="@dimen/titlebar_text" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="好友可以在注册时填写上方邀请码" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="5dp"
+                    android:text="你也可以通过下方链接向他发送邀请" />
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="2dp"
+                        android:background="@color/textbule" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="立即邀请" />
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="2dp"
+                        android:background="@color/textbule" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/share_weixin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/share_weixin"
+                        android:gravity="center"
+                        android:text="微信" />
+
+                    <TextView
+                        android:id="@+id/share_friend"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/share_friend"
+                        android:gravity="center"
+                        android:text="朋友圈" />
+
+                    <TextView
+                        android:id="@+id/share_qq"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/share_qq"
+                        android:gravity="center"
+                        android:text="QQ" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/background_round"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <HorizontalScrollView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:fillViewport="true"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/linear_head_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+                            
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="你还未邀请过用户会员"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:padding="5dp"
+                                    android:text="快去邀请吧！"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            
+                            
+                            
+                            
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/invite_bg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我邀请的用户会员"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/tv_member_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="( 0 )"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/background_round"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <HorizontalScrollView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/linear_lawyer_head_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:padding="5dp"
+                                android:text="你还未邀请过律师会员"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:padding="5dp"
+                                android:text="快去邀请吧！"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:background="@drawable/invite_bg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我邀请的律师会员"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:id="@+id/tv_lawyer_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="( 0 )"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

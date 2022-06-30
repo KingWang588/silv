@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yhy.hzzll.my.activity.PremiumSupportActivity">
+
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="专属咨询报价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/rl_persondata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="价格"
+                android:textColor="@color/textgrey"
+                android:textSize="14sp" />
+
+            <EditText
+                android:inputType="number"
+                android:hint="请输入报价金额在39-98之间"
+                android:id="@+id/et_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@null" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.5"
+                android:text="元/次" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray_line" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:background="@color/app_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意事项" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:background="@color/app_bg" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1，使用专属咨询您可以向用户提供即时在线法律咨询服务，开启后用户可以在全国和同城律师中看到你的报价并进行购买; " />
+
+            <TextView
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 2，用户购买后私律会在第一时间短信通知你，请您及时登陆私律APP为用户提供咨询;" />
+
+            <TextView  android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 3，专属咨询为1对1专属咨询，平台建议定价范围为39元至98元;" />
+
+            <TextView  android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4，平台会在咨询结束（最晚48小时内）将咨询费用结算至您的余额;" />
+
+            <TextView  android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 5，平台会在用户购买您的专属服务后，根据你的报价收取服务费。（私律2.0上线之初特惠律师，免除平台服务费。）;" />
+            <TextView  android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 6，当用户购买了您的专属咨询后，3次在24小时内没有回复。系统将会停用您专属咨询5天的时间;" />
+
+            <TextView  android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7，下列为私律专属咨询声明与协议，同意以下声明与协议开启私律专属咨询。" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:checked="true"
+            android:id="@+id/cb_declaration_and_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tv_declaration_and_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《私律专属咨询声明与协议》"
+            android:textColor="@color/textbule" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/backroud_bule"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="提交报价"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

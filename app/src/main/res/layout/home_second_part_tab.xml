@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:paddingBottom="6dp"
+                android:padding="5dp"
+                android:id="@+id/line_zixun"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textbule" />
+
+
+            <TextView
+                android:id="@+id/tv_latest_user_consultation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="最新咨询"
+                android:textColor="@color/black" />
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/ccgrey" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:visibility="gone"
+                android:paddingBottom="6dp"
+                android:id="@+id/line_jieda"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/textbule" />
+
+
+            <TextView
+                android:id="@+id/tv_my_exclusive_consulting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="我的解答"
+                android:textColor="@color/black" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tv_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/icon_arrow_right"
+            android:gravity="right|center_vertical"
+            android:text="更多"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+        <View
+            android:background="@color/ccgrey"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

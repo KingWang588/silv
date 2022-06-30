@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/dot_bule"
+            android:layout_width="8dp"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:text="您是男方还是女方"
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginLeft="40dp"
+            android:padding="5dp"
+            android:background="@color/ccgrey"
+            android:layout_width="30dp"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:text="女方"
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroud_input_white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="收益信息"
+            android:textColor="@color/textgrey"
+            android:textSize="16sp" />
+
+        <View style="@style/grayline" />
+
+        <TextView
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:text="     收益信息展示您在改订单中或获得所有收益。包括用户购买你的专属咨询费用，用户给您的打赏金额。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

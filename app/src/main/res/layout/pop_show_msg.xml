@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/pop_show_msg_bg"
+    android:paddingBottom="20dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="个人信息保护提示"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/app_bg"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="@string/pop_private_info_msg"
+        android:letterSpacing="0.03"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="10dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textSize="14sp"
+            android:textColor="@color/grey"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/ok"
+            android:text="同意"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

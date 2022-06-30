@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机号码"
+            android:textColor="@color/textgrey" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="购买服务后可显示"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/cgrey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="电子邮箱"
+            android:textColor="@color/textgrey" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="购买服务后可显示"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/cgrey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在律所"
+            android:textColor="@color/textgrey" />
+
+        <TextView
+            android:id="@+id/tv_law_firm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="购买服务后可显示"
+            android:minLines="1"
+            android:textColor="@color/cgrey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="55dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="律师专长"
+            android:textColor="@color/textgrey" />
+
+        <TextView
+            android:id="@+id/tv_lawyer_expertise"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="3"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:minLines="2"
+            android:textColor="@color/textgrey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="55dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址"
+            android:textColor="@color/textgrey" />
+
+        <TextView
+            android:id="@+id/tv_address_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:minLines="2"
+            android:textColor="@color/textgrey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="55dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="律师简介"
+            android:textColor="@color/textgrey" />
+
+        <TextView
+            android:id="@+id/tv_lawyer_introduction"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:minLines="2"
+            android:textColor="@color/textgrey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+
+</LinearLayout>

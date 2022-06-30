@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/title_bule_layout" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发表学术文章"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="学术标题"
+        android:padding="13dp"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@null"
+            android:hint="请输入标题"
+            android:singleLine="true"
+            android:textColor="@color/textgrey"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="摘要"
+        android:textColor="@color/textgrey"
+        android:textSize="14sp" />
+
+    <EditText
+            android:id="@+id/et_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lines="3"
+        android:gravity="top|left"
+        android:padding="3dp"
+        android:maxLines="3"
+        android:textCursorDrawable="@drawable/interacation_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+        android:padding="13dp"
+            android:text="关键字"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_keyword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:padding="10dp"
+            android:hint="请输入关键字以英文逗号隔开"
+            android:background="@null"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="学术内容"
+        android:textColor="@color/textgrey"
+        android:textSize="14sp" />
+
+    <EditText
+        android:textSize="14sp"
+        android:hint="可以将您自己的文章复制粘贴至此发表。"
+            android:id="@+id/et_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:padding="3dp"
+        android:textCursorDrawable="@drawable/interacation_line" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/backroud_bule"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="发布文章"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+</LinearLayout>

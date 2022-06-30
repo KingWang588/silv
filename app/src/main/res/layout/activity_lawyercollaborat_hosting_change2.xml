@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/title_bule_layout" >
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="选择托管方式"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titlebar_text" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/tag_bule"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="托管交易"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="        协作酬金在10000元以内，建议您使用担保交易，提前托管酬金。酬金托管后，提升需求信用度，可以吸引更多优秀协作方参与，80%以上的发布人选择了提前托管酬金。" />
+
+        <View
+            style="@style/grayline"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="托管酬金"
+                android:textColor="@color/textgrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:background="@color/app_bg"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="300.00元"
+                android:textColor="@color/red"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dot_frame_cgray"
+                    android:gravity="center"
+                    android:text=" ? "
+                    android:textColor="@color/cgrey" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backroud_radius_cyellow"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="私律担保交易（招商银行监督）"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/app_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tag_bule"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="托管交易"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="        协作酬金在10000元以上，或协作酬金无法明确，建议使用线下支付。" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/backroud_radius_bule"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="直接发布 线下支付"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

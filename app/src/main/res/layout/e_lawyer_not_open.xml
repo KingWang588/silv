@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/textbule" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/Exclusive_lawyer" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:text="专属律师现只开放婚姻保和债权保，申请开通专属律师后可提供1888元的婚姻保和债权保服务。" />
+
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:text="开通后您可承接“接办案”中标注“婚姻保”或“债权保”的委托，
+并根据规章获得相应报酬。" />
+
+
+            <View
+                android:background="@color/ccgrey"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/textbule" />
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="专属律师开通的条件" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/excl_lawyer1"
+                    android:text="快速咨询50次以上"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/excl_lawyer2"
+                    android:text="无投诉记录"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/excl_lawyer3"
+                    android:text="职业年限2年以上"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/excl_lawyer4"
+                    android:text="专长包括婚姻家庭"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/excl_lawyer5"
+                    android:text="专长包括债权债务"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:gravity="center"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@drawable/excl_lawyer3"
+                    android:text="成功案例2篇以上"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/textbule" />
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="说明：" />
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:text="1. 您可以在“会员中心”-“设置”-“个人资料”-“专长”设置专长。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:text="2.婚姻家庭、债权债务每个专长发表最少两篇成功案例您可以通过“会员中心”“文章发表”，发表成功案例。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:text="3.婚姻保，债权保平台会收取20%的服务费用。" />
+
+
+            <!--<LinearLayout-->
+
+                <!--android:background="#f8f8f8"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <Button
+                    android:textSize="15sp"
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/backroud_bule"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:text="阅读并同意以下声明与协议提交审核"
+                    android:textColor="@color/white" />
+
+                <am.widget.multiactiontextview.MultiActionTextView
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_read_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

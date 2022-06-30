@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.activity.newcollaborate.CloudDiskActivity">
+
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="私律云盘"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_file"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+        <!--<ListView-->
+            <!--android:id="@+id/lv_file"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</ListView>-->
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:gravity="center"
+            android:text="没有数据"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="如您需要上传文件至云盘，请在电脑端访问并登录下方链接上传:"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textSize="14sp"
+        android:id="@+id/tv_pan_address"
+        android:text=""
+        android:gravity="center"
+       android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backroud_bule"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+</LinearLayout>

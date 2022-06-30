@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.activity.newcollaborate.EvaluationActivity">
+
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="给律师评星级"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RatingBar
+            android:id="@+id/evelate_rateingbar"
+            style="@style/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:gravity="start"
+        android:hint="对TA的服务还满意吗？说两句吧！"
+        android:background="@drawable/pick_up_case_apply_et"
+        android:id="@+id/et_evaluation"
+        android:minLines="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_submit_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/backroud_bule"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="提交评价"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_marginTop="70dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="用户已选择其他律师，服务正在进行中"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/ccgrey"
+            android:text="立即申请"
+            android:textColor="@color/cgrey" />
+
+</LinearLayout>

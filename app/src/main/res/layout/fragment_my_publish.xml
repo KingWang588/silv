@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+<com.handmark.pulltorefresh.library.PullToRefreshListView
+   
+    android:id="@+id/lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null" >
+
+</com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+       <TextView   
+        android:id="@+id/tv_no_data"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:text="您还未发布任何协作信息"
+        android:gravity="center"  /> 
+
+</LinearLayout>
+
+

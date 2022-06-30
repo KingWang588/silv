@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/rpbg"
+        android:layout_width="300dp"
+        android:layout_height="360dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:src="@drawable/closew" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="对于每个问题的回复速度最快前三名律师给予咨询红包：第一名10元；第二名6元；第三名4元。" />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="提问用户可以对所有回复过问题的律师进行追问，第1位回复追问的律师会给予2元奖励。" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="用户可以采纳1次律师的回复。被采纳的律师可以获得6元奖励。" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="对恶意回复、虚假回复骗取奖励红包，会被系统纳入黑名单中，并给出通告。" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

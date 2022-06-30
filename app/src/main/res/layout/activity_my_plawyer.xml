@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的接办案"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+        <TextView
+            android:id="@+id/tv_my_participate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我参与的"
+            android:textColor="@color/publish_color_selector"
+            android:textSize="13sp" />
+
+        <View
+            style="@style/bulevline"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/tv_my_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我发布的"
+            android:textColor="@color/publish_color_selector"
+            android:textSize="13sp" />
+
+        <View
+            style="@style/bulevline"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/tv_specify_hire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指定聘请我的"
+            android:textColor="@color/publish_color_selector"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View style="@style/grayline" />
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_case"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_publish"
+        android:divider="@null"
+        android:padding="5dp"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+</LinearLayout>

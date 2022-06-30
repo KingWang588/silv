@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="咨询服务报价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+    </RelativeLayout>
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshListView-->
+        <!--android:id="@+id/listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:divider="@null" >-->
+    <!--</com.handmark.pulltorefresh.library.PullToRefreshListView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="20dp"
+                android:src="@drawable/zhuanshuzixun" />
+
+            <View
+                android:layout_width="0.2dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:text="专属咨询"
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="vertical" >
+
+                        <!--<TextView-->
+                            <!--android:background="@drawable/background_btn_i_want"-->
+                            <!--android:id="@+id/tv_edit"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginLeft="5dp"-->
+                            <!--android:layout_marginRight="10dp"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="立即开启"-->
+                            <!--android:textColor="@color/orangeyellow"-->
+                            <!--android:textSize="15sp" />-->
+
+                        <CheckBox
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/cb_o_c_premiumsupport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/checkbox_style"
+                            android:button="@null" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:text="暂无报价"
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/textgrey"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="19dp" />
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_marginLeft="10dp"
+                        android:text="点击修改"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="开启后用户可以购买您的专属咨询。"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/grayline" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/app_bg" />
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#666666" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View style="@style/grayline" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

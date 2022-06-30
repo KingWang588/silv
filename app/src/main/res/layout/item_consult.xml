@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/register_nomal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="55dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/iv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="飞翔123"
+                    android:textColor="@color/textgrey"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/iv_adress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="湖北-武汉"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="07/08" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_redpacket"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/redpacket"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="4"
+            android:padding="4dp"
+            android:text="山洞是打算考粉红色方式法拉利发送方式可就发生了哈萨克浪费刘师傅啦拉萨山洞是打算考粉红色方式法拉利发送方式可就发生了哈萨克浪费刘师傅啦拉萨山洞是打算考粉红色方式法拉利发送方式可就发生了哈萨克浪费刘师傅啦拉萨"
+            android:textColor="@color/textgrey"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_voice_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/green"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:text="语音"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="15dp"
+                    android:text="加载中..."
+                    android:textColor="#ffffff"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/voice4" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_content_lenth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="0秒"
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <View
+            style="@style/grayline"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/iv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/backroud_consult_radius_bule"
+                android:padding="4dp"
+                android:text="婚姻家庭"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/iv_listen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/consult_view"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="11"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/iv_praise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/consult_collect"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="11"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/iv_bounty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawableLeft="@drawable/consult_reply"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="11"
+                        android:textColor="@color/textgrey"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_i_want"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/background_btn_i_want"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_i_want"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/voice" />
+
+                    <TextView
+                        android:id="@+id/btn_I_want"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:text="语音解答疑"
+                        android:textColor="#EE9A49"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/ccgrey" />
+
+    </LinearLayout>
+
+</LinearLayout>

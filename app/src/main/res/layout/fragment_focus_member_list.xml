@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_myfocus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="暂无信息" />
+
+        </LinearLayout>
+
+
+        <!--<com.yhy.hzzll.view.SeekBarRight-->
+        <!--android:id="@+id/view_right"-->
+        <!--android:layout_width="20dip"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/text_tag"-->
+        <!--android:layout_width="60dip"-->
+        <!--android:layout_height="60dip"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="A"-->
+        <!--android:textColor="@color/textbule"-->
+        <!--android:textSize="58sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:visibility="gone" />-->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_head_title_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改邮箱地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_old_email_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="15dp"
+            android:text="现邮箱地址"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@null"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/grayline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_pwd_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="15dp"
+            android:text="登录密码"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="11"
+            android:padding="15dp"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/grayline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/tv_email_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="15dp"
+            android:text="新邮箱地址"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_new_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@null"
+            android:hint="请输入新邮箱"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/grayline"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="15dp"
+            android:text="邮箱验证码"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_verfication_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:maxLength="6"
+                android:padding="15dp"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_send_verification_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_empty_verrification"
+                android:text="@string/btn_send_verfication_no_time_code_txt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_modification_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/backroud_bule"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="保存"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/business_card_item_iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:src="@drawable/register_nomal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/business_card_item_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:text="何虎 律师"
+                android:textSize="16sp" />
+
+            <TextView
+                android:singleLine="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/business_card_item_tv_address"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/address"
+                android:drawablePadding="5dp"
+                android:text="湖北-武汉"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/business_card_item_tv_special"
+                android:layout_width="120dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:text="婚姻家庭  合同纠纷  工程造价" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的申请" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:text="展开"
+            android:id="@+id/tv_o_c_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/ccgrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_avatar"
+            android:src="@drawable/register_nomal"
+            android:layout_width="75dp"
+            android:layout_height="100dp" />
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_my_name"
+                    android:text="和律师"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:textColor="@color/cgrey"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/tv_my_address"
+                    android:text="湖北武汉"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/cgrey"
+                android:textSize="15sp"
+                android:id="@+id/tv_my_specialty"
+                android:text="婚姻家庭，债券债券"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="@color/cgrey"
+                android:textSize="15sp"
+                android:id="@+id/tv_time"
+                android:text="申请时间：2018-08-09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/ccgrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_modify_price"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的报价：" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_marginLeft="80dp"
+            android:id="@+id/tv_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500元" />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/textbule"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_modify_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改报价" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/ccgrey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:text="我的优势："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_my_advantage"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="15sp"
+        android:text="本人擅长婚姻家庭方面的案子,多年来已有丰富经验,一定可以帮助到您! 本人擅长婚姻家庭方面的案子,多年来已有丰富经验,一定可以帮助到您!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_wait_money"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ccgrey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议主动与用户联系。" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_anniu_applyed"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_above="@+id/btn_connect"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="您已申请成功，建议主动与用户联系，确定交易！"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/backroud_bule"
+            android:clickable="true"
+            android:text="联系TA"
+            android:textColor="@color/white" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule" >
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="案件进度"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+    </RelativeLayout>
+
+ 
+    
+    
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+ <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_footmark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+       <TextView   
+         android:paddingTop="20dp"
+        android:id="@+id/tv_no_data"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:text="       请让您的律师进入私律案件管理功能，在您所关注的案件里添加您为当事人，即可与您的律师同步改案件进度，有助于您快捷、方便的了解改案件的进度。"
+        /> 
+        </LinearLayout>
+</LinearLayout>

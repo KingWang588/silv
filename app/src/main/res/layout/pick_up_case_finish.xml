@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="我的申请"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:drawableRight="@drawable/icon_arrow_up"
+            android:id="@+id/tv_o_c_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="收起"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linear_my_apply_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/iv_avatar_1"
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+                android:src="@drawable/register_nomal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_my_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="和律师"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_my_address_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="湖北武汉"
+                        android:textColor="@color/cgrey"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_my_specialty_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="婚姻家庭，债券债券"
+                    android:textColor="@color/cgrey"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_time_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="申请时间：2018-08-09"
+                    android:textColor="@color/cgrey"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/ccgrey" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_modify_price_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的报价："
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_price_trusteeship_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:text="500元"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/ccgrey" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="我的优势："
+            android:textColor="@color/cgrey"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_my_advantage_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="本人擅长婚姻家庭方面的案子,多年来已有丰富经验,一定可以帮助到您! 本人擅长婚姻家庭方面的案子,多年来已有丰富经验,一定可以帮助到您!"
+            android:textColor="@color/cgrey"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/ccgrey" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="代写文书"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_upload_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/upload_file"
+            android:drawablePadding="5dp"
+            android:text="上传文件"
+            android:textColor="@color/textbule"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/cgrey" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_no_file"
+        android:padding="10dp"
+        android:text="您还未上传相关文书。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.yhy.hzzll.view.GridViewForScrollView
+        android:id="@+id/gv_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2">
+    </com.yhy.hzzll.view.GridViewForScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/ccgrey" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_file_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="法律意见书"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_upload_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/upload_file"
+            android:drawablePadding="5dp"
+            android:text="上传文件"
+            android:textColor="@color/textbule"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/cgrey" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_no_legal_opinion"
+        android:padding="10dp"
+        android:text="您还未上传法律意见书。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:id="@+id/linear_legal_opinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:src="@drawable/file_dispaly" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_legal_opinion_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="财产分割协议" />
+
+            <TextView
+                android:id="@+id/tv_legal_opinion_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-07-09" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/ccgrey" />
+
+    <LinearLayout
+        android:id="@+id/linear_wait_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ccgrey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户将在24小时内确认，超过24小时订单将默认完成。" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_omplaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ccgrey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户已提起投诉，请等待客服耐心处理" />
+
+        <TextView
+            android:id="@+id/tv_call_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="联系客服"
+            android:textColor="@color/textbule" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_wait_evleant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="评价"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/ccgrey" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="用户还未评论" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_complaint_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_money_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已将款项打入您的余额"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="投诉处理结果如下："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_complaint_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="处理意见：XXXXXXXXXXXXXXXx"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_evelate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="评价"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/ccgrey" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="用户评星" />
+
+
+            <RatingBar
+                android:id="@+id/evelate_rateingbar"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/evelate_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="20dp"
+            android:text="机会就会健康和进口黄金客户阖家安康是否会尽快回家客户发送即可恢复健康师傅就会发生尽快哈空间十分环境恢复健康时间" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

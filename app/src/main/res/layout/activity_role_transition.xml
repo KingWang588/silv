@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yhy.hzzll.mian.activity.RoleTransitionActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/title_bule_layout">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账号转换"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+
+        <TextView
+
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:padding="13dp"
+                android:text="手机号"
+                android:textColor="@color/textgrey"
+                android:textSize="14sp" />
+
+            <EditText
+                android:focusable="false"
+                android:editable="false"
+                android:id="@+id/et_user_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:padding="13dp"
+                android:textColor="@color/grey"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/grayline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="15dp"
+                android:text="短信验证码"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="7"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_securitycode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:hint="验证码"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_securitycode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/frame_bule"
+                    android:padding="5dp"
+                    android:text="发送验证码"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/grayline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/backroud_bule"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确认转换为律师"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

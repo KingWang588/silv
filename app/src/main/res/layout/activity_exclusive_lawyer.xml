@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".my.activity.ExclusiveLawyerActivity">
+
+    <RelativeLayout
+        style="@style/title_layout"
+        android:background="@color/textbule">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="专属律师"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+    </RelativeLayout>
+
+
+    <include android:id="@+id/close"
+        android:visibility="gone"
+        layout="@layout/e_lawyer_close"/>
+
+    <include android:id="@+id/not_open"
+        android:visibility="gone"
+        layout="@layout/e_lawyer_not_open"/>
+
+    <include android:id="@+id/pending_review"
+        android:visibility="gone"
+        layout="@layout/e_lawyer_pending_review"/>
+
+    <include android:id="@+id/pass"
+        android:visibility="gone"
+        layout="@layout/e_lawyer_pass"/>
+
+    <include android:id="@+id/not_pass"
+        android:visibility="gone"
+        layout="@layout/e_lawyer_not_pass"/>
+
+
+
+</LinearLayout>

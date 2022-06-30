@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".my.activity.NewInviteActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            style="@style/title_layout"
+            android:background="@color/textbule">
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的邀请注册"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titlebar_text" />
+
+            <TextView
+                android:id="@+id/tv_look"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="查看收益"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iv_banner"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="通过以下方式注册的用户会员都将计入您的推广成果！"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:background="@color/cgrey"
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="17sp"
+                        android:text="分享方式一"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/cgrey"
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linear_one"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginLeft="40dp"
+                        android:padding="10dp"
+                        android:src="@drawable/share_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:padding="5dp"
+                            android:text="点击立即分享"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            android:text="分享您的专属推广页面给好友"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:background="@color/cgrey"
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"/>
+
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="17sp"
+                        android:text="分享方式二"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/cgrey"
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginLeft="40dp"
+                        android:padding="10dp"
+                        android:src="@drawable/erweima"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_download"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:padding="5dp"
+                            android:text="二维码分享"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            android:text="点击下载您的专属邀请二维码"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <View
+                        android:background="@color/cgrey"
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"/>
+
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="17sp"
+                        android:text="分享方式三"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:background="@color/cgrey"
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginLeft="40dp"
+                        android:padding="10dp"
+                        android:src="@drawable/copy_1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:padding="5dp"
+                            android:text="分享邀请码给好友"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            android:text="好友在注册时可以填写您的邀请码"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_invite_code"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="HFJHFJHSJhJFHJFHJ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_copy_invitation_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/consult_exceptional_bg"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="复制邀请码"
+                        android:textColor="#b6110f"
+                        android:textSize="@dimen/titlebar_text" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/textbule" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="注意事项" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/ccgrey" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:text="1.您邀请的好友首次成功购买快速咨询后，您可得5元现金奖励;"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="2.您邀请的好友首次成功购买专属咨询后，您可得10元现金奖励;" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="3.拥有相同手机号、微信号的账号将被视为同一用户（适用于您和您的好友）;" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="4.您可以在邀请注册页面底部“查看收益”页面查看自己的奖励明细；" />
+
+                <TextView
+
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:text="5.针对违规骗取奖励的行为，将不予发放奖励、追回相关奖励或封号，并依法追究其法律责任。" />
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#00ffffff"
+    tools:context="com.yhy.hzzll.home.activity.consult.VoiceReplyActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_bg_send_msg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="语音回复"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/close" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:src="@drawable/voicereply"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/layout_record"
+            layout="@layout/unit_voice_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/layout_play"
+            layout="@layout/unit_voice_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_voice_reply"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="试听"
+                android:drawableTop="@drawable/voice_play"
+                android:id="@+id/tv_play"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_rec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/voice_record"
+                android:gravity="center"
+                android:text="开始录音" />
+
+            <TextView
+                android:id="@+id/tv_sent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="10dp"
+                android:drawableTop="@drawable/finishvoice"
+                android:gravity="center"
+                android:text="发送" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

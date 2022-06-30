@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linear_b"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:background="@drawable/frame_cgray"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_avatar_apply"
+            android:src="@drawable/register_nomal"
+            android:layout_width="40dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:hint="请用10-200个字描述你的优势，供用户参考。"
+            android:background="@drawable/pick_up_case_apply_et"
+            android:id="@+id/tv_advantage"
+            android:minLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_pq"
+        android:padding="10dp"
+        android:background="@drawable/frame_cgray"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_avatar_apply_2"
+                android:src="@drawable/register_nomal"
+                android:layout_width="40dp"
+                android:layout_height="50dp" />
+
+    <LinearLayout
+
+        android:background="@drawable/frame_cgray"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:padding="10dp"
+            android:inputType="number"
+            android:hint="请填写您的报价，报价后您可根据沟通修改报价。"
+            android:background="@drawable/pick_up_case_apply_et"
+            android:id="@+id/et_intention_price"
+            android:minLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:padding="10dp"
+            android:gravity="start"
+            android:hint="请用10-129字描述您的优势，供用户参考。您的申请信息只有发布方可见"
+            android:background="@drawable/pick_up_case_apply_et"
+            android:id="@+id/et_advantage_1"
+            android:minLines="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_1_1"
+            android:padding="10dp"
+            android:layout_above="@+id/btn_apply"
+            android:gravity="center"
+            android:text="您的申请信息只有发布方可见"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_1_2_1"
+            android:layout_above="@+id/btn_apply"
+            android:gravity="center"
+            android:text="该用户指定聘请您，"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_1_2_2"
+            android:layout_above="@+id/btn_apply"
+            android:gravity="center"
+            android:text="请填写您的优势报价后主动同用户联系！"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_apply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/backroud_bule"
+            android:clickable="true"
+            android:padding="10dp"
+            android:text="立即申请"
+            android:textColor="@color/white" />
+
+    <TextView
+        android:visibility="gone"
+        android:padding="10dp"
+        android:gravity="center"
+        android:id="@+id/tv_refuse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_apply"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:text="拒绝" />
+
+</LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

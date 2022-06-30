@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@drawable/backroud_white"
+        android:layout_margin="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="是否让TA联系我"
+            android:textColor="@color/textgrey"
+            android:textSize="14sp" />
+
+        <View style="@style/grayline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="       点击确认后，私律会给TA发送提示信息，让TA与您联系，或者您可以直接联系TA，即时联系。"
+            android:textColor="@color/cgrey"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/backroud_cgrey"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="确定"
+                android:textColor="@color/textgrey"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:id="@+id/tv_connect_he"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/backroud_bule"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="直接联系TA"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

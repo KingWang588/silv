@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".home.activity.newcollaborate.PickUpCaseActivity">
+
+            <RelativeLayout
+                style="@style/title_layout"
+                android:background="@color/textbule">
+
+                <ImageView
+                    android:id="@+id/ic_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="婚姻保"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titlebar_text" />
+
+                <ImageView
+                    android:id="@+id/iv_tip_web"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/question" />
+
+            </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+                android:id="@+id/ptrfs"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fff0d4"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="5dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="10dp"
+                                android:background="@color/textbule" />
+
+                            <TextView
+                                android:id="@+id/tv_order_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:text="订单号 "
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text=""
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_tip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/view"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:text="用户将在24小时内确认，超时自动完成"
+                                android:textColor="@color/red"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="订单状态："
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_order_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/tv_1"
+                            android:layout_marginLeft="80dp"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_apl_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="已有  名律师申请"
+                            android:textSize="15sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_price_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="金额："
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_order_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="时间："
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_data_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户："
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:text=""
+                            android:textSize="15sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/linear_p_and_o"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户电话："
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:text="18912345678"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="查看订单详情 >"
+                            android:textColor="@color/textbule"
+                            android:textSize="15sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/ccgrey" />
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_demand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="需求描述："
+                            android:textColor="@color/textgrey"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_demed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述需求描述"
+                            android:textColor="@color/textgrey"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <View style="@style/grayline" />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_attachment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/ccgrey"
+                            android:padding="10dp"
+                            android:text="附件详情："
+                            android:textColor="@color/textgrey"
+                            android:textSize="16sp"/>
+
+                        <View style="@style/grayline" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fillViewport="true"
+                            android:scrollbars="none" >
+
+                            <LinearLayout
+                                android:id="@+id/ll_album"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/app_bg" />
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/anniu1">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="该用户的问卷"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tv_o_c"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:text="展开"
+                                android:drawableRight="@drawable/icon_down"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+
+                        <com.yhy.hzzll.view.ListViewForScrollview
+                            android:id="@+id/lv_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/bg_lawyer_coop_ques"
+                            android:divider="@null"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/ccgrey" />
+
+
+                    <include
+                        android:id="@+id/view_apply"
+                        layout="@layout/pick_up_case_apply"
+                        android:visibility="gone" />
+
+
+                    <include
+                        android:id="@+id/view_applyed"
+                        layout="@layout/pick_up_case_applyed"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/view_finish"
+                        layout="@layout/pick_up_case_finish"
+                        android:visibility="gone" />
+
+
+                    <include
+                        android:id="@+id/linear_other"
+                        layout="@layout/pick_up_case_other"
+                        android:visibility="gone" />
+
+
+                    <include
+                        android:id="@+id/linear_coll_publish_select_lawyer"
+                        layout="@layout/coll_publish_select_lawyer"
+                        android:visibility="gone" />
+
+
+                    <include
+                        android:id="@+id/linear_coll_publish_wait_trusteeship"
+                        layout="@layout/coll_publish_wait_trusteeship"
+                        android:visibility="gone" />
+
+
+                    <include
+                        android:id="@+id/linear_waiting_to_pay_the_deposit"
+                        layout="@layout/waiting_to_pay_the_deposit"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linear_rufuse"
+                        android:layout_marginTop="100dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:padding="10dp"
+                            android:textColor="@color/red"
+                            android:text="您已拒绝此次委托。"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textSize="18sp"
+                            android:id="@+id/tv_rufuse_reason"
+                            android:textColor="@color/red"
+                            android:text="原因："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linear_no_apply"
+                        android:layout_marginTop="100dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:padding="10dp"
+                            android:textColor="@color/red"
+                            android:text="抱歉24小时内没有律师申请"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textColor="@color/red"
+                            android:text="已全额退款至您的余额!"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rl_coll_publish_wait_trusteeship"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ccgrey" />
+
+
+                <TextView
+                    android:id="@+id/tv_connect_trusteeship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/contact"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="联系TA" />
+
+
+                <TextView
+                    android:id="@+id/tv_sure_trusteeship"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/orangeyellow"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="托管酬金"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_anniu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/frame_cgray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_connect"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/contact"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="联系TA" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/textbule" />
+
+                <TextView
+                    android:id="@+id/tv_tele"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/tele"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="立即拨打" />
+
+                <TextView
+                    android:id="@+id/tv_sure_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/anniu2"
+                    android:gravity="center"
+                    android:text="确认服务完成"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_sure_complete_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/anniu2"
+                    android:gravity="center"
+                    android:text="确认完成"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+    </LinearLayout>
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>

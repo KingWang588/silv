@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+        <!--android:src="@drawable/register_nomal"-->
+        <!--android:background="@drawable/image_round"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="50dp" />-->
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_margin="5dp"
+        android:id="@+id/iv_head"
+        android:src="@drawable/lawyer_img"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        app:riv_corner_radius_top_left="5dp"
+        app:riv_corner_radius_top_right="5dp"
+        app:riv_corner_radius_bottom_right="5dp"
+        app:riv_corner_radius_bottom_left="5dp"
+        app:riv_border_width="1dip"
+        app:riv_oval="false"
+        app:riv_border_color="@color/white"
+        />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="@drawable/backroud_rwhite"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="客服介入"
+        android:textColor="@color/textgrey"
+        android:textSize="13sp" />
+
+    <View style="@style/grayline" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="请用20-300字说明您的情况，将会作为客服的评判依据。"
+        android:textColor="@color/cgrey"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/ed_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/frame_remind_grey"
+        android:ellipsize="end"
+        android:gravity="left|top"
+        android:hint="请输入需要客服介入的理由。"
+        android:lines="4"
+        android:maxLines="4"
+        android:padding="5dp"
+        android:textColorHint="@color/grey"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/backroud_cgrey"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/textgrey"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/backroud_bule"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/upload_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="上传图片" />
+        <View style="@style/grayline" />
+        <TextView
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/upload_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="本地上传" />
+        <View style="@style/grayline" />
+        <TextView
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/upload_cloud_disk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="私律云盘" />
+
+
+    </LinearLayout>
+
+    <View style="@style/grayline" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="取消"
+        android:textColor="@color/textgrey"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.yhy.hzzll.view.PullToZoomScrollViewEx
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        style="@style/title_layout">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="律师办公室"
+            android:textColor="@color/white"
+            android:textSize="@dimen/titlebar_text" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:background="@color/white"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_contact_him"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#7FD0FF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="联系TA"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_contact_me"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/textbule"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="让TA联系我"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+     
+            <LinearLayout
+                android:visibility="gone"
+                  android:background="#7FD0FF"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                  <TextView
+                      android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/selectxin"
+            android:background="#7FD0FF"
+            android:id="@+id/tv_action_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"    
+            android:text="关注"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+            </LinearLayout>
+
+      
+    </LinearLayout>
+
+</RelativeLayout>
