@@ -22,7 +22,6 @@ local.properties
 
 # Maven
 target/
-dist/
 
 # JetBrains IDE
 .idea/
