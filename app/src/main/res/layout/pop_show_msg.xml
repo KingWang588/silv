@@ -26,21 +26,33 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"/>
 
-    <TextView
-        android:id="@+id/msg"
-        android:layout_marginTop="10dp"
-        android:textSize="14sp"
-        android:textColor="@color/black"
-        android:text="@string/pop_private_info_msg"
-        android:letterSpacing="0.03"
-        android:lineSpacingMultiplier="1.2"
-        android:padding="10dp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:layout_gravity="center"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/msg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="@string/pop_private_info_msg"
+                android:letterSpacing="0.03"
+                android:scrollbars="vertical"
+                android:fadeScrollbars="false"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="10dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -63,7 +75,8 @@
         <TextView
             android:id="@+id/ok"
             android:text="同意"
-            android:textColor="@color/red"
+            android:background="@color/red"
+            android:textColor="@color/white"
             android:textSize="14sp"
             android:padding="10dp"
             android:gravity="center"
