@@ -49,7 +49,7 @@ public class OrderListAdapter extends BaseAdapter {
 
        ViewHolder holder = null;
         if (convertView == null) {
-            holder = new OrderListAdapter.ViewHolder();
+            holder = new ViewHolder();
             convertView = LayoutInflater.from(context).inflate(R.layout.item_new_order_list, null);
             holder.tv_order_no = (TextView) convertView.findViewById(R.id.tv_order_no);
             holder.tv_trade_price = (TextView) convertView.findViewById(R.id.tv_trade_price);
@@ -65,7 +65,7 @@ public class OrderListAdapter extends BaseAdapter {
         }
 
 
-        com.yhy.hzzll.home.entity.OrderListEntity.DataBean.ListBean entity = list.get(i);
+        OrderListEntity.DataBean.ListBean entity = list.get(i);
 
         holder.tv_order_no.setText( entity.getOrder_no());
         holder.linear_pursue.setVisibility(View.GONE);

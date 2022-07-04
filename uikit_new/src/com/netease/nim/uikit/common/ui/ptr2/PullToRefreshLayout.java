@@ -54,7 +54,7 @@ public class PullToRefreshLayout extends SuperSwipeRefreshLayout {
         if (pullDown) {
             loadingLayoutDown = new CustomLoadingLayout(getContext());
             setHeaderView(loadingLayoutDown);
-            setOnPullRefreshListener(new SuperSwipeRefreshLayout.OnPullRefreshListener() {
+            setOnPullRefreshListener(new OnPullRefreshListener() {
 
                 @Override
                 public void onRefresh() {

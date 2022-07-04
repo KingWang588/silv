@@ -13,7 +13,7 @@ public class LogUtils {
 
 	public static void logE(String content) {
 		if(isPrint){
-			Log.e("=======>>>>>222",content);
+			//Log.e("=======>>>>>222",content);
 		}
 	}
 

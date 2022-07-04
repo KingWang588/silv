@@ -10,11 +10,11 @@ import java.util.List;
  */
 public class ConsultReplysEntity extends BaseEntity {
 
-    /**
-     * code : 0
-     * message : 查询结果!
-     * data : {"pages":1,"total":2,"list":[{"id":"1","consult_id":1,"users_id":57,"content":"asdasdfasdfasdfasdf222","file_attachment_id":"","speech_length":0,"base_region_id":{"simple_name":"武汉","area_name":"武汉市","whole_name":"湖北省,武汉市"},"count_pursue":0,"count_pursue_reply":0,"count_like":3,"count_attend":0,"count_reward":0,"is_adopt":0,"is_delete":0,"order_no":"100","created_at":"2017-07-20 10:47:14","updated_at":"2017-08-01 10:25:30","username":"252","head_img":"http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/227/20170717/84fabe8b5e29f97c3c642febacc3eb22.png","lawyer_type":"实习律师","time":"1天前"},{"id":"2","consult_id":1,"users_id":1,"content":"25522423e","file_attachment_id":"http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/52/20170705/a68b72c2843adfbcb4b3ac0383b4a84a.jpg","speech_length":0,"base_region_id":{"simple_name":"黄石","area_name":"黄石市","whole_name":"湖北省,黄石市"},"count_pursue":0,"count_pursue_reply":0,"count_like":2,"count_attend":3,"count_reward":3,"is_adopt":0,"is_delete":0,"order_no":"12560","created_at":"2017-07-26 10:20:43","updated_at":"2017-08-01 15:47:32","username":"axxd21","head_img":"http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/1/20170621/13ea427a3ce52cf1ad2cf451f1a3e750.jpg","lawyer_type":"执业律师","time":"19小时前"}]}
-     */
+//    /**
+//     * code : 0
+//     * message : 查询结果!
+//     * data : {"pages":1,"total":2,"list":[{"id":"1","consult_id":1,"users_id":57,"content":"asdasdfasdfasdfasdf222","file_attachment_id":"","speech_length":0,"base_region_id":{"simple_name":"武汉","area_name":"武汉市","whole_name":"湖北省,武汉市"},"count_pursue":0,"count_pursue_reply":0,"count_like":3,"count_attend":0,"count_reward":0,"is_adopt":0,"is_delete":0,"order_no":"100","created_at":"2017-07-20 10:47:14","updated_at":"2017-08-01 10:25:30","username":"252","head_img":"http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/227/20170717/84fabe8b5e29f97c3c642febacc3eb22.png","lawyer_type":"实习律师","time":"1天前"},{"id":"2","consult_id":1,"users_id":1,"content":"25522423e","file_attachment_id":"http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/52/20170705/a68b72c2843adfbcb4b3ac0383b4a84a.jpg","speech_length":0,"base_region_id":{"simple_name":"黄石","area_name":"黄石市","whole_name":"湖北省,黄石市"},"count_pursue":0,"count_pursue_reply":0,"count_like":2,"count_attend":3,"count_reward":3,"is_adopt":0,"is_delete":0,"order_no":"12560","created_at":"2017-07-26 10:20:43","updated_at":"2017-08-01 15:47:32","username":"axxd21","head_img":"http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/1/20170621/13ea427a3ce52cf1ad2cf451f1a3e750.jpg","lawyer_type":"执业律师","time":"19小时前"}]}
+//     */
 
     private int code;
     private String message;

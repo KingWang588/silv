@@ -26,6 +26,7 @@ public class GuideActivity extends Activity {
                 @Override
                 public void ok() {
                     PrefsUtils.saveString(getApplicationContext(), PrefsUtils.Agree,"agree");
+                    sendBroadcast(new Intent("HzApplication.receiver"));
                     start();
                 }
                 @Override

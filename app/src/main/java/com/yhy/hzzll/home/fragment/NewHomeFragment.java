@@ -89,7 +89,7 @@ import static com.yhy.hzzll.utils.OpenFileUtil.openFile;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link NewHomeFragment.OnFragmentInteractionListener} interface
+ * {@link OnFragmentInteractionListener} interface
  * to handle interaction events.
  * Use the {@link NewHomeFragment#newInstance} factory method to
  * create an instance of this fragment.

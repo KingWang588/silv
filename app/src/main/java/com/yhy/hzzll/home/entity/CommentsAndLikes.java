@@ -8,11 +8,11 @@ import java.util.List;
 
 public class CommentsAndLikes {
 
-    /**
-     * code : 0
-     * message : 查询结果!
-     * data : {"sns_like_head_img_list":["http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/1/20170621/13ea427a3ce52cf1ad2cf451f1a3e750.jpg","http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/391/20170718/1ade44e91982ee3157d963ac79849c84.png","http://silvapi.hzzll.com/img/avatar.jpg"],"lawyer_evaluate_list":{"pages":1,"total":2,"list":[{"nickname":"blues.deng","content":"22222222","start_rate":2,"updated_at":"2017-08-01 14:44:40"},{"nickname":"blues.deng","content":"我","start_rate":6,"updated_at":"2017-07-24 16:12:06"}]}}
-     */
+//    /**
+//     * code : 0
+//     * message : 查询结果!
+//     * data : {"sns_like_head_img_list":["http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/1/20170621/13ea427a3ce52cf1ad2cf451f1a3e750.jpg","http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/391/20170718/1ade44e91982ee3157d963ac79849c84.png","http://silvapi.hzzll.com/img/avatar.jpg"],"lawyer_evaluate_list":{"pages":1,"total":2,"list":[{"nickname":"blues.deng","content":"22222222","start_rate":2,"updated_at":"2017-08-01 14:44:40"},{"nickname":"blues.deng","content":"我","start_rate":6,"updated_at":"2017-07-24 16:12:06"}]}}
+//     */
 
     private int code;
     private String message;
@@ -43,10 +43,10 @@ public class CommentsAndLikes {
     }
 
     public static class DataBean {
-        /**
-         * sns_like_head_img_list : ["http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/1/20170621/13ea427a3ce52cf1ad2cf451f1a3e750.jpg","http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/391/20170718/1ade44e91982ee3157d963ac79849c84.png","http://silvapi.hzzll.com/img/avatar.jpg"]
-         * lawyer_evaluate_list : {"pages":1,"total":2,"list":[{"nickname":"blues.deng","content":"22222222","start_rate":2,"updated_at":"2017-08-01 14:44:40"},{"nickname":"blues.deng","content":"我","start_rate":6,"updated_at":"2017-07-24 16:12:06"}]}
-         */
+//        /**
+//         * sns_like_head_img_list : ["http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://silvapi.hzzll.com/img/avatar.jpg","http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/1/20170621/13ea427a3ce52cf1ad2cf451f1a3e750.jpg","http://hzzll-test-private.oss-cn-shanghai.aliyuncs.com/UploadRoot/391/20170718/1ade44e91982ee3157d963ac79849c84.png","http://silvapi.hzzll.com/img/avatar.jpg"]
+//         * lawyer_evaluate_list : {"pages":1,"total":2,"list":[{"nickname":"blues.deng","content":"22222222","start_rate":2,"updated_at":"2017-08-01 14:44:40"},{"nickname":"blues.deng","content":"我","start_rate":6,"updated_at":"2017-07-24 16:12:06"}]}
+//         */
 
         private LawyerEvaluateListBean lawyer_evaluate_list;
         private List<String> sns_like_head_img_list;

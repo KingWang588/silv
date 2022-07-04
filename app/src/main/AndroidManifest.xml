@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.yhy.hzzll">
 
-    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permisusesCleartextTrafficsion.REQUEST_INSTALL_PACKAGES"/>
 
     <!-- 云信IM start -->
     <uses-permission android:name="android.permission.INTERNET" />

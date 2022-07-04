@@ -360,7 +360,7 @@ public class HttpDataUtils {
                         public void onSuccess(ResponseInfo<String> arg0) {
                             if (sucessBack != null)
                                 sucessBack.sucess(arg0);
-                            LogUtils.logE(arg0.result);
+                           // LogUtils.logE(arg0.result);
                         }
 
                         @Override

@@ -26,7 +26,7 @@ import com.yhy.hzzll.utils.PrefsUtils;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ConsultFragment.OnFragmentInteractionListener} interface
+ * {@link OnFragmentInteractionListener} interface
  * to handle interaction events.
  * Use the {@link ConsultFragment#newInstance} factory method to
  * create an instance of this fragment.

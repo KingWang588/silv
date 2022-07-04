@@ -3,7 +3,10 @@ package com.yhy.hzzll.framework;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Application;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.text.TextUtils;
@@ -63,7 +66,7 @@ import static com.yhy.hzzll.config.NimSDKOptionConfig.getAppCacheDir;
  * @date 2015-10-6
  */
 public class HzApplication extends Application {
-
+    private static String HZACTION="HzApplication.receiver";
     public static DataCache userEntityCache;
     public static String cachePath = null;
     CloudPushService pushService;
@@ -84,6 +87,19 @@ public class HzApplication extends Application {
 
     @Override
     public void onCreate() {
+        super.onCreate();
+
+        NIMClient.init(this, loginInfo(), options());
+        if (inMainProcess(this)) {
+            // 在主进程中初始化UI组件，判断所属进程方法请参见demo源码。
+            initUiKit();
+        }
+
+        IntentFilter filter = new IntentFilter(HZACTION);
+        registerReceiver(receiver, filter);
+    }
+
+    private void initAllSDK(){
 
         ApplicationProvider.IMPL.init(this);
         DemoCache.setContext(this);
@@ -92,13 +108,8 @@ public class HzApplication extends Application {
         init();
         initCloudChannel(this);
         DemoCache.setContext(this);
-
-        NIMClient.init(this, loginInfo(), options());
 //
-        if (inMainProcess(this)) {
-            // 在主进程中初始化UI组件，判断所属进程方法请参见demo源码。
-            initUiKit();
-        }
+
         ZXingLibrary.initDisplayOpinion(this);
 
 
@@ -110,8 +121,19 @@ public class HzApplication extends Application {
                 ))
                 .commit();
 
-        super.onCreate();
     }
+
+
+    private BroadcastReceiver receiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getAction().equals(HZACTION)){
+                Log.e("receiver","receiver");
+                initAllSDK();
+            }
+        }
+    };
+
 
     private void initUiKit() {
 
@@ -405,8 +427,8 @@ public class HzApplication extends Application {
             @Override
             public void onSuccess(String response) {
 
-                Log.e("123546789794564", "init cloudchannel success");
-                Log.e("========>>>>>>", "init CloudPushService success, device id: " + pushService.getDeviceId() +", Appkey: " + AmsGlobalHolder.getAppMetaData("com.alibaba.app.appkey"));
+//                Log.e("123546789794564", "init cloudchannel success");
+//                Log.e("========>>>>>>", "init CloudPushService success, device id: " + pushService.getDeviceId() +", Appkey: " + AmsGlobalHolder.getAppMetaData("com.alibaba.app.appkey"));
 
                 if (PrefsUtils.getString(applicationContext, PrefsUtils.UID) != null) {
                     pushService.bindAccount(MyData.SILVZONE+PrefsUtils.getString(applicationContext, PrefsUtils.UID), new CommonCallback() {
@@ -578,6 +600,7 @@ public class HzApplication extends Application {
         super.attachBaseContext(base);
         MultiDex.install(this);
     }
+
 
 
 

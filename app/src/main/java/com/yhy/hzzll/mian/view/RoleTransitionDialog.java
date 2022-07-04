@@ -25,7 +25,7 @@ public class RoleTransitionDialog {
         void buy();
     }
 
-    public AlertDialog showDialog(Context context, final RoleTransitionDialog.Click click, String reason ) {
+    public AlertDialog showDialog(Context context, final Click click, String reason ) {
         alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.show();
         alertDialog.setCancelable(true);

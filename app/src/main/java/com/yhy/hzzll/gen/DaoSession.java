@@ -17,7 +17,7 @@ import com.yhy.hzzll.gen.FootprintDao;
 /**
  * {@inheritDoc}
  * 
- * @see org.greenrobot.greendao.AbstractDaoSession
+ * @see AbstractDaoSession
  */
 public class DaoSession extends AbstractDaoSession {
 

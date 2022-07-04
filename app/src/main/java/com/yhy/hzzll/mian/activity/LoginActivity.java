@@ -618,7 +618,7 @@ public class LoginActivity extends Activity {
 
             }
         });
-        httpDataUtils.setFailBack(new HttpDataUtils.FailBack() {
+        httpDataUtils.setFailBack(new FailBack() {
 
             @Override
             public void fail(String msg) {
@@ -725,7 +725,7 @@ public class LoginActivity extends Activity {
                 }
             }
         });
-        httpDataUtils.setFailBack(new HttpDataUtils.FailBack() {
+        httpDataUtils.setFailBack(new FailBack() {
 
             @Override
             public void fail(String msg) {
