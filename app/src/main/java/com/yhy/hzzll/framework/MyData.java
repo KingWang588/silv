@@ -1208,10 +1208,10 @@ public class MyData {
     //律师端确认完成
     public static String ORDER_LAWYER_CONFIRMATION = SILVZONE + VERSIONCODE_2 + "order/lawyer-confirmation";
 
-//tapi.silvzone.com/v1/employlayer/update-amount
+    //tapi.silvzone.com/v1/employlayer/update-amount
 //POST
 //律师修改报价
-public static String EMPLOYLAYER_UPDATE_AMOUNT = SILVZONE + VERSIONCODE + "employlayer/update-amount";
+    public static String EMPLOYLAYER_UPDATE_AMOUNT = SILVZONE + VERSIONCODE + "employlayer/update-amount";
 
 
     //tapi.silvzone.com/v1/employlayer/layer-application
@@ -1285,16 +1285,16 @@ public static String EMPLOYLAYER_UPDATE_AMOUNT = SILVZONE + VERSIONCODE + "emplo
     public static String EMPLOYLAYER_CONFIRM_SUCCESS = SILVZONE + VERSIONCODE+ "employlayer/confirm-success";
 
 
-//tapi.silvzone.com/v1/employlayer/layer-refuse
+    //tapi.silvzone.com/v1/employlayer/layer-refuse
 //POST
 //律师拒绝
-public static String EMPLOYLAYER_LAYER_REFUSE = SILVZONE + VERSIONCODE+ "employlayer/layer-refuse";
+    public static String EMPLOYLAYER_LAYER_REFUSE = SILVZONE + VERSIONCODE+ "employlayer/layer-refuse";
 
 
-//tapi.silvzone.com/v1/qcode-return
+    //tapi.silvzone.com/v1/qcode-return
 //GET
 //APP扫码确认
-public static String APP_QCODE_RETURN = SILVZONE + VERSIONCODE+ "qcode-return";
+    public static String APP_QCODE_RETURN = SILVZONE + VERSIONCODE+ "qcode-return";
 
     /**
      * 分享的外链
@@ -1312,6 +1312,11 @@ public static String APP_QCODE_RETURN = SILVZONE + VERSIONCODE+ "qcode-return";
 
     //客服电话 consumer hotline
     public static final String CONSUMER_HOTLINE = "4001618528";
+
+    //云信SDK隐私协议
+    public static final String PRIVACY_AGREEMENT = "https://yunxin.163.com/clauses?serviceType=3";
+
+
 
 
 }

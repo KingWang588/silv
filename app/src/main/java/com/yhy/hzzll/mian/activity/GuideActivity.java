@@ -20,14 +20,16 @@ public class GuideActivity extends Activity {
 
         super.onCreate(arg0);
         setContentView(R.layout.guide);
-        if (PrefsUtils.getString(getApplicationContext(), PrefsUtils.Agree).equals("agree"))   start();
-        else {
+        if (PrefsUtils.getString(getApplicationContext(), PrefsUtils.Agree).equals("agree")) {
+            //start();
+            showPrivacyDialog();
+        }else {
             ShowDialogCallback callback = new ShowDialogCallback() {
                 @Override
                 public void ok() {
                     PrefsUtils.saveString(getApplicationContext(), PrefsUtils.Agree,"agree");
                     sendBroadcast(new Intent("HzApplication.receiver"));
-                    start();
+                    showPrivacyDialog();
                 }
                 @Override
                 public void cancel() {
@@ -54,5 +56,28 @@ public class GuideActivity extends Activity {
                 finish();
             }
         }, 2000);
+    }
+
+
+    private void showPrivacyDialog(){
+        ShowDialogCallback callback01 = new ShowDialogCallback() {
+            @Override
+            public void ok() {
+                PrefsUtils.saveString(getApplicationContext(), PrefsUtils.Agree,"agree");
+                sendBroadcast(new Intent("HzApplication.receiver"));
+                start();
+            }
+            @Override
+            public void cancel() {
+                finish();
+            }
+        };
+        ShuoMClickableSpan.Callback click = s -> {
+            startActivity(new Intent().putExtra("title", "网易云信隐私政策")
+                    .putExtra("url", MyData.PRIVACY_AGREEMENT)
+                    .setClass(GuideActivity.this, WebviewActivity.class));
+        };
+        new ShowMsgDialog().showMsg(this,"网易云信隐私政策", getString(R.string.pop_private_agreement_info_msg),"《网易隐私政策》",click,callback01);
+
     }
 }
