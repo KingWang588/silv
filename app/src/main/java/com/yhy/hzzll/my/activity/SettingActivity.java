@@ -64,7 +64,6 @@ public class SettingActivity extends BaseActivity {
     Switch switchWindow;
 
 
-
     @ViewInject(R.id.tv_rise_in_rank)
     TextView tv_rise_in_rank;
 
@@ -126,16 +125,16 @@ public class SettingActivity extends BaseActivity {
         }
         final HzApplication hzApplication = (HzApplication) getApplication();
         String swit = PrefsUtils.getString(SettingActivity.this, PrefsUtils.OFF_PUSH);
-        if (TextUtils.equals("1",swit)){
+        if (TextUtils.equals("1", swit)) {
             switchWindow.setChecked(true);
-        }else{
+        } else {
             switchWindow.setChecked(false);
         }
         switchWindow.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (b){
-                    PrefsUtils.saveString(SettingActivity.this, PrefsUtils.OFF_PUSH,"1");
+                if (b) {
+                    PrefsUtils.saveString(SettingActivity.this, PrefsUtils.OFF_PUSH, "1");
                     hzApplication.getPushService().turnOnPushChannel(new CommonCallback() {
                         @Override
                         public void onSuccess(String s) {
@@ -148,8 +147,8 @@ public class SettingActivity extends BaseActivity {
                         }
                     });
 
-                }else{
-                    PrefsUtils.saveString(SettingActivity.this, PrefsUtils.OFF_PUSH,"0");
+                } else {
+                    PrefsUtils.saveString(SettingActivity.this, PrefsUtils.OFF_PUSH, "0");
                     hzApplication.getPushService().turnOffPushChannel(new CommonCallback() {
                         @Override
                         public void onSuccess(String s) {
@@ -230,7 +229,7 @@ public class SettingActivity extends BaseActivity {
             case R.id.rl_persondata:
 
                 if (PrefsUtils.getString(SettingActivity.this, PrefsUtils.AUTHORIZATION) == null || PrefsUtils.getString(SettingActivity.this, PrefsUtils.AUTHORIZATION).isEmpty()) {
-                    Log.e("TAG", "onClick: toLogin" );
+                    Log.e("TAG", "onClick: toLogin");
                     startActivity(new Intent(SettingActivity.this, LoginActivity.class).putExtra("activity", SettingActivity.class.toString()));
                     return;
                 }
@@ -336,47 +335,51 @@ public class SettingActivity extends BaseActivity {
 
 
     private void loginOut() {
+        try {
 
-        NIMClient.getService(AuthService.class).logout();
 
-        String username = PrefsUtils.getString(context, PrefsUtils.USERNAME) + "";
-        String userpassword = PrefsUtils.getString(context, PrefsUtils.USERPASSROWD) + "";
-        String isremember = PrefsUtils.getString(context, PrefsUtils.ISREMEMBER) + "";
+            NIMClient.getService(AuthService.class).logout();
 
-        MANService manService = MANServiceProvider.getService();
-        manService.getMANAnalytics().updateUserAccount(PrefsUtils.getString(SettingActivity.this, PrefsUtils.UNAME), PrefsUtils.getString(SettingActivity.this, PrefsUtils.UID));
+            String username = PrefsUtils.getString(context, PrefsUtils.USERNAME) + "";
+            String userpassword = PrefsUtils.getString(context, PrefsUtils.USERPASSROWD) + "";
+            String isremember = PrefsUtils.getString(context, PrefsUtils.ISREMEMBER) + "";
 
-        PrefsUtils.saveString(context, PrefsUtils.USERNAME, username);
-        PrefsUtils.saveString(context, PrefsUtils.USERPASSROWD, userpassword);
-        PrefsUtils.saveString(context, PrefsUtils.ISREMEMBER, isremember);
-        PrefsUtils.saveString(context, PrefsUtils.UID, "");
-        PrefsUtils.saveString(context, PrefsUtils.OLD_UID, "");
+            MANService manService = MANServiceProvider.getService();
+            manService.getMANAnalytics().updateUserAccount(PrefsUtils.getString(SettingActivity.this, PrefsUtils.UNAME), PrefsUtils.getString(SettingActivity.this, PrefsUtils.UID));
 
-        CacheUtils.dataUserEntity = null;
-        HzApplication.getInstance().getUserEntityCache().put(Constans.USER_INFO, CacheUtils.dataUserEntity, 86400);
-        final HzApplication hzApplication = (HzApplication) getApplication();
-        hzApplication.getPushService().unbindAccount(new CommonCallback() {
-            @Override
-            public void onSuccess(String s) {
-                unbind(hzApplication.getPushService().getDeviceId());
-            }
+            PrefsUtils.saveString(context, PrefsUtils.USERNAME, username);
+            PrefsUtils.saveString(context, PrefsUtils.USERPASSROWD, userpassword);
+            PrefsUtils.saveString(context, PrefsUtils.ISREMEMBER, isremember);
+            PrefsUtils.saveString(context, PrefsUtils.UID, "");
+            PrefsUtils.saveString(context, PrefsUtils.OLD_UID, "");
 
-            @Override
-            public void onFailed(String s, String s1) {
-                PrefsUtils.saveString(context, PrefsUtils.AUTHORIZATION, "");
-                PrefsUtils.saveString(context, PrefsUtils.REFRESH_TOKEN, "");
+            CacheUtils.dataUserEntity = null;
+            HzApplication.getInstance().getUserEntityCache().put(Constans.USER_INFO, CacheUtils.dataUserEntity, 86400);
+            final HzApplication hzApplication = (HzApplication) getApplication();
+            hzApplication.getPushService().unbindAccount(new CommonCallback() {
+                @Override
+                public void onSuccess(String s) {
+                    unbind(hzApplication.getPushService().getDeviceId());
+                }
 
-                MyActivityManager.getInstance().finishAllActivity();
-                Intent intent = new Intent();
-                intent.setClass(context, LoginActivity.class);
-                startActivity(intent);
+                @Override
+                public void onFailed(String s, String s1) {
+                    PrefsUtils.saveString(context, PrefsUtils.AUTHORIZATION, "");
+                    PrefsUtils.saveString(context, PrefsUtils.REFRESH_TOKEN, "");
+
+                    MyActivityManager.getInstance().finishAllActivity();
+                    Intent intent = new Intent();
+                    intent.setClass(context, LoginActivity.class);
+                    startActivity(intent);
 //                PrefsUtils.clear(SettingActivity.this);
-                finish();
-            }
-        });
-        // 关闭所有在栈里面的activity
+                    finish();
+                }
+            });
+            // 关闭所有在栈里面的activity
 
-
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void unbind(String id) {
@@ -402,7 +405,7 @@ public class SettingActivity extends BaseActivity {
 
             @Override
             public void onFailure(HttpException e, String s) {
-
+                Log.e("SettingActivity", s);
             }
         });
     }

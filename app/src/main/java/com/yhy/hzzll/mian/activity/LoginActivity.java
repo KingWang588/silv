@@ -347,7 +347,7 @@ public class LoginActivity extends Activity {
         call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-
+                Log.e("loginActivity","登录失败："+e);
             }
 
             @Override
@@ -401,7 +401,7 @@ public class LoginActivity extends Activity {
                             }
 
                         }catch (Exception e){
-
+                            Log.e("loginActivity","登录失败："+e);
                         }
 
                     }
@@ -505,7 +505,7 @@ public class LoginActivity extends Activity {
 
                                 @Override
                                 public void onFailed(String s, String s1) {
-
+                                    LogUtils.logE("开启推送失败！");
                                 }
                             });
 
@@ -600,6 +600,7 @@ public class LoginActivity extends Activity {
 
             @Override
             public void fail(String msg) {
+                Log.e("loginActivity",msg);
             }
         });
 
@@ -618,7 +619,7 @@ public class LoginActivity extends Activity {
 
             }
         });
-        httpDataUtils.setFailBack(new FailBack() {
+        httpDataUtils.setFailBack(new HttpDataUtils.FailBack() {
 
             @Override
             public void fail(String msg) {
@@ -725,7 +726,7 @@ public class LoginActivity extends Activity {
                 }
             }
         });
-        httpDataUtils.setFailBack(new FailBack() {
+        httpDataUtils.setFailBack(new HttpDataUtils.FailBack() {
 
             @Override
             public void fail(String msg) {

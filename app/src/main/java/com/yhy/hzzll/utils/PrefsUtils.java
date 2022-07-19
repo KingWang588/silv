@@ -212,4 +212,18 @@ public class PrefsUtils {
 		SharedPreferences sp = get(context);
 		sp.edit().clear().commit();
 	}
+
+	public static Boolean getIsAgreePrivacyBoolean(Context context){
+		SharedPreferences sp = get(context);
+		boolean position = sp.getBoolean("is_agree_privacy", false);
+		return position;
+	}
+
+	public static void setIsAgreePrivacyBoolean(Context context,boolean is_agree_privacy){
+		SharedPreferences sp = get(context);
+		Editor editor = sp.edit();
+		editor.putBoolean("is_agree_privacy", is_agree_privacy);
+		editor.commit();
+	};
+
 }

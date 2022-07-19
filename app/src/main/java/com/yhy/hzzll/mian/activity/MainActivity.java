@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -176,12 +177,13 @@ public class MainActivity extends BaseActivity implements BackHandlerInterface {
         mainactivity = this;
         EventBus.getDefault().register(this);
         viewInit();
+        //注意这里需要调用无参的分步初始化的方法，必须要在主进程中调用。
+            int unreadNum = NIMClient.getService(MsgService.class).getTotalUnreadCount();
+            Message message = new Message();
+            message.what = 1;
+            message.obj = unreadNum;
+            handler.sendMessage(message);
 
-        int unreadNum = NIMClient.getService(MsgService.class).getTotalUnreadCount();
-        Message message = new Message();
-        message.what = 1;
-        message.obj = unreadNum;
-        handler.sendMessage(message);
 
         if (PrefsUtils.getString(MainActivity.this, PrefsUtils.REFRESH_TOKEN) != null && PrefsUtils.getString(MainActivity.this, PrefsUtils.REFRESH_TOKEN).length() != 0) {
             if (ClickFilter.isRefresh()) {
@@ -243,23 +245,22 @@ public class MainActivity extends BaseActivity implements BackHandlerInterface {
 
     @Override
     protected void onResume() {
+            int unreadNum = NIMClient.getService(MsgService.class).getTotalUnreadCount();
+            Message message = new Message();
+            message.what = 1;
+            message.obj = unreadNum;
+            handler.sendMessage(message);
 
-        int unreadNum = NIMClient.getService(MsgService.class).getTotalUnreadCount();
-        Message message = new Message();
-        message.what = 1;
-        message.obj = unreadNum;
-        handler.sendMessage(message);
+            NIMClient.getService(AuthServiceObserver.class).observeOnlineStatus(
+                    new Observer<StatusCode>() {
+                        public void onEvent(StatusCode status) {
+                            if (status.wontAutoLogin()) {
 
-        NIMClient.getService(AuthServiceObserver.class).observeOnlineStatus(
-                new Observer<StatusCode>() {
-                    public void onEvent(StatusCode status) {
-                        if (status.wontAutoLogin()) {
-
-                            PrefsUtils.saveString(context, PrefsUtils.AUTHORIZATION, "");
-                            PrefsUtils.saveString(context, PrefsUtils.REFRESH_TOKEN, "");
-                            NIMClient.getService(AuthService.class).logout();
-                            startActivity(new Intent(MainActivity.this, LoginActivity.class).putExtra("show",true));
-                            finish();
+                                PrefsUtils.saveString(context, PrefsUtils.AUTHORIZATION, "");
+                                PrefsUtils.saveString(context, PrefsUtils.REFRESH_TOKEN, "");
+                                NIMClient.getService(AuthService.class).logout();
+                                startActivity(new Intent(MainActivity.this, LoginActivity.class).putExtra("show",true));
+                                finish();
 
 //                            final HzApplication hzApplication = (HzApplication) getApplication();
 //
@@ -267,10 +268,9 @@ public class MainActivity extends BaseActivity implements BackHandlerInterface {
 //                                unbind(hzApplication.getPushService().getDeviceId());
 //                            }
 
+                            }
                         }
-                    }
-                }, true);
-
+                    }, true);
         super.onResume();
     }
 

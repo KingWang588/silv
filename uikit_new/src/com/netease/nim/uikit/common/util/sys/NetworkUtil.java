@@ -542,7 +542,7 @@ public class NetworkUtil {
         WifiInfo info = wifi.getConnectionInfo();
 
         if (info != null) {
-            return info.getMacAddress();
+            return info.Address();
         }
 
         return "";

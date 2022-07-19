@@ -20,7 +20,6 @@ public class DefaultContactEventListener implements ContactEventListener {
         // 点击联系人之后，可以选择打开个人信息页面或者聊天页面
         NimUIKit.startP2PSession(context, account);
     }
-
     @Override
     public void onItemLongClick(Context context, String account) {
         // 长按联系人

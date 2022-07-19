@@ -1315,8 +1315,7 @@ public class MyData {
 
     //云信SDK隐私协议
     public static final String PRIVACY_AGREEMENT = "https://yunxin.163.com/clauses?serviceType=3";
-
-
+    public static final String HZAPPLICATION_RECEIVER = "HzApplication.receiver";
 
 
 }

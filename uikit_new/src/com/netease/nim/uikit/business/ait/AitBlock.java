@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * Created by hzchenkang on 2017/7/7.
+ * Created by Dacheng on 2017/7/7.
  * 表示一个@块
  */
 
@@ -32,11 +32,10 @@ public class AitBlock {
     }
 
     // 新增 segment
-    public AitSegment addSegment(int start) {
+    public void addSegment(int start) {
         int end = start + text.length() - 1;
         AitSegment segment = new AitSegment(start, end);
         segments.add(segment);
-        return segment;
     }
 
     /**
@@ -48,9 +47,7 @@ public class AitBlock {
             return;
         }
         int length = changeText.length();
-        Iterator<AitSegment> iterator = segments.iterator();
-        while (iterator.hasNext()) {
-            AitSegment segment = iterator.next();
+        for (AitSegment segment : segments) {
             // 从已有的一个@块中插入
             if (start > segment.start && start <= segment.end) {
                 segment.end += length;
@@ -81,7 +78,7 @@ public class AitBlock {
                     segment.broken = true;
                     segment.end -= length;
                 }
-            } else if (start <= segment.start) {
+            } else {
                 segment.start -= length;
                 segment.end -= length;
             }

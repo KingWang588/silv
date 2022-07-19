@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
+import android.os.Build;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -53,8 +54,8 @@ import com.yhy.hzzll.utils.HttpDataUtils;
 import com.yhy.hzzll.utils.LogUtils;
 import com.yhy.hzzll.utils.PrefsUtils;
 import com.yhy.hzzll.utils.sys.SystemUtil;
-
 import java.io.File;
+import java.util.UUID;
 
 import static com.yhy.hzzll.config.NimSDKOptionConfig.getAppCacheDir;
 
@@ -87,32 +88,41 @@ public class HzApplication extends Application {
 
     @Override
     public void onCreate() {
+        PushServiceFactory.init(this);
+        Log.e("kunkun","用户未同意隐私政策，PushServiceFactory.init()");
+        initAllSDK();
+
         super.onCreate();
-
-        NIMClient.init(this, loginInfo(), options());
-        if (inMainProcess(this)) {
-            // 在主进程中初始化UI组件，判断所属进程方法请参见demo源码。
-            initUiKit();
-        }
-
         IntentFilter filter = new IntentFilter(HZACTION);
         registerReceiver(receiver, filter);
     }
 
     private void initAllSDK(){
-
         ApplicationProvider.IMPL.init(this);
         DemoCache.setContext(this);
         setupDatabase();
         imageLoaderInit();
         init();
-        initCloudChannel(this);
+
+
+        boolean isAgreePrivacy= PrefsUtils.getIsAgreePrivacyBoolean(this);
+
+        if (!isAgreePrivacy){
+            NIMClient.config(this, getLoginInfo(), options());
+            Log.e("kunkun","用户未同意隐私政策，NIMClient.config()");
+        }else{
+            NIMClient.init(getApplicationContext(), loginInfo(), options());
+            if (inMainProcess(getApplicationContext())) {
+                initUiKit();
+            }
+            Log.e("kunkun","用户已经同意隐私政策：初始化：NIMClient.init()");
+            initCloudChannel(this);
+            Log.e("kunkun","用户已经同意隐私政策：初始化：initCloudChannel()");
+        }
+
         DemoCache.setContext(this);
-//
 
         ZXingLibrary.initDisplayOpinion(this);
-
-
         FileDownloader.setupOnApplicationOnCreate(this)
                 .connectionCreator(new FileDownloadUrlConnection
                         .Creator(new FileDownloadUrlConnection.Configuration()
@@ -128,8 +138,8 @@ public class HzApplication extends Application {
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(HZACTION)){
-                Log.e("receiver","receiver");
-                initAllSDK();
+                initCloudChannel(getApplicationContext());
+                Log.e("kunkun","用户已经同意隐私政策：初始化：initCloudChannel()");
             }
         }
     };
@@ -193,67 +203,9 @@ public class HzApplication extends Application {
         // 配置附件缩略图的尺寸大小。表示向服务器请求缩略图文件的大小
         // 该值一般应根据屏幕尺寸来确定， 默认值为 Screen.width / 2
         options.thumbnailSize = 480 / 2;
-
-        // 用户资料提供者, 目前主要用于提供用户资料，用于新消息通知栏中显示消息来源的头像和昵称
-//        options.userInfoProvider = new UserInfoProvider() {
-//            @Override
-//            public UserInfo getUserInfo(String account) {
-//                return null;
-//            }
-//
-//            @Override
-//            public int getDefaultIconResId() {
-//                return R.drawable.app;
-//            }
-//
-//            @Override
-//            public Bitmap getTeamIcon(String tid) {
-//                return null;
-//            }
-//
-//            @Override
-//            public Bitmap getAvatarForMessageNotifier(String account) {
-//                return null;
-//            }
-//
-//            @Override
-//            public String getDisplayNameForMessageNotifier(String account, String sessionId,
-//                                                           SessionTypeEnum sessionType) {
-//                return null;
-//            }
-//
-//            @Override
-//            public Bitmap getAvatarForMessageNotifier(SessionTypeEnum sessionTypeEnum, String s) {
-//                return null;
-//            }
-//        };
         return options;
     }
 
-
-
-
-    private void initUIKit() {
-        // 初始化
-        NimUIKit.init(this, buildUIKitOptions());
-
-//        // 设置地理位置提供者。如果需要发送地理位置消息，该参数必须提供。如果不需要，可以忽略。
-//        NimUIKit.setLocationProvider(new NimDemoLocationProvider());
-
-        // IM 会话窗口的定制初始化。
-        SessionHelper.init();
-
-        // 聊天室聊天窗口的定制初始化。
-//        ChatRoomSessionHelper.init();
-
-        // 通讯录列表定制初始化
-        ContactHelper.init();
-
-        // 添加自定义推送文案以及选项，请开发者在各端（Android、IOS、PC、Web）消息发送时保持一致，以免出现通知不一致的情况
-//        NimUIKit.setCustomPushContentProvider(new DemoPushContentProvider());
-
-        NimUIKit.setOnlineStateContentProvider(new DemoOnlineStateContentProvider());
-    }
 
 
     private UIKitOptions buildUIKitOptions() {
@@ -398,7 +350,7 @@ public class HzApplication extends Application {
         // 设置渠道（用以标记该app的分发渠道名称），如果不关心可以不设置即不调用该接口，渠道设置将影响控制台【渠道分析】栏目的报表展现。如果文档3.3章节更能满足您渠道配置的需求，就不要调用此方法，按照3.3进行配置即可；1.1.6版本及之后的版本，请在init方法之前调用此方法设置channel.
 //        manService.getMANAnalytics().setChannel("某渠道");
         // MAN初始化方法之一，从AndroidManifest.xml中获取appKey和appSecret初始化
-        manService.getMANAnalytics().init(this, getApplicationContext());
+        manService.getMANAnalytics().init(this, this);
 //         MAN另一初始化方法，手动指定appKey和appSecret
 //         String appKey = "********";
 //         String appSecret = "*************";
@@ -420,8 +372,6 @@ public class HzApplication extends Application {
      * @param applicationContext
      */
     private void initCloudChannel(final Context applicationContext) {
-
-        PushServiceFactory.init(applicationContext);
         pushService = PushServiceFactory.getCloudPushService();
         pushService.register(applicationContext, new CommonCallback() {
             @Override
@@ -439,7 +389,7 @@ public class HzApplication extends Application {
 
                         @Override
                         public void onFailed(String s, String s1) {
-
+                            bind(getDeviceId());
                         }
                     });
                 }
@@ -456,7 +406,7 @@ public class HzApplication extends Application {
 
                         @Override
                         public void onFailed(String s, String s1) {
-
+                            bind(getDeviceId());
                         }
                     });
 
@@ -485,6 +435,7 @@ public class HzApplication extends Application {
 
             @Override
             public void onFailed(String errorCode, String errorMessage) {
+                bind(getDeviceId());
                 LogUtils.logE("init cloudchannel failed -- errorcode:" + errorCode + " -- errorMessage:" + errorMessage);
             }
         });
@@ -604,9 +555,20 @@ public class HzApplication extends Application {
 
 
 
-
-
-
-
+    /**
+     * 获取设备唯一ID
+     * @return
+     */
+    public static String getDeviceId() {
+        String m_szDevIDShort = "35" + (Build.BOARD.length() % 10) + (Build.BRAND.length() % 10) + (Build.CPU_ABI.length() % 10) + (Build.DEVICE.length() % 10) + (Build.MANUFACTURER.length() % 10) + (Build.MODEL.length() % 10) + (Build.PRODUCT.length() % 10);
+        String serial = null;
+        try {
+            serial = Build.class.getField("SERIAL").get(null).toString();
+            return new UUID(m_szDevIDShort.hashCode(), serial.hashCode()).toString();
+        } catch (Exception exception) {
+            serial = "serial";
+        }
+        return new UUID(m_szDevIDShort.hashCode(), serial.hashCode()).toString();
+    }
 
 }
